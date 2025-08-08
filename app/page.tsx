@@ -59,6 +59,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex flex-col gap-2 w-40 relative">
+                <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
                 <button
                   className="bg-gradient-to-r from-[#ff0033] via-[#ff0055] to-[#a8002f] cursor-pointer hover:from-[#a8002f] hover:to-[#ff0033] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95"
                   type="button"
@@ -85,6 +86,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex flex-col gap-2 w-40 relative">
+                <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
                 <button
                   className="bg-gradient-to-r from-[#ff0033] via-[#ff0055] to-[#a8002f] cursor-pointer hover:from-[#a8002f] hover:to-[#ff0033] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95"
                   type="button"
