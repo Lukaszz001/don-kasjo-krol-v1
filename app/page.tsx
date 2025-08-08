@@ -1,11 +1,25 @@
+"use client";
 import Image from "next/image";
 import Head from "next/head";
+import { useState } from "react";
 
 export default function Home() {
+  const [copied, setCopied] = useState(false);
+  const [copiedSpinbara, setCopiedSpinbara] = useState(false);
 
+  const handleCopy = () => {
+    navigator.clipboard.writeText("KASJO");
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  const handleCopySpinbara = () => {
+    navigator.clipboard.writeText("KASJO");
+    setCopiedSpinbara(true);
+    setTimeout(() => setCopiedSpinbara(false), 2000);
+  };
 
   return (
-    
     <div className="min-h-screen bg-[#111112] text-white font-sans flex flex-col items-stretch px-0">
       {/* Slimmer, premium header */}
       <header className="w-full sticky top-0 z-30 bg-gradient-to-br from-[#1a1010] to-[#18181b] backdrop-blur border-b border-[#222] flex items-center justify-center px-2 sm:px-8 py-2 shadow-lg">
@@ -29,7 +43,77 @@ export default function Home() {
           <div className="flex items-center gap-2">
           <Image src="/icon.png" alt="Logo" width={340} height={340} className="rounded-xl shadow-md" />
         </div>
-          <div className="relative w-full flex justify-center mb-8 mt-4">
+        {/* Recommended Casinos - stacked wide cards */}
+        <section className="w-full mb-12">
+          <h2 className="text-3xl font-extrabold mb-10 text-center">Polecane <span className="text-theme-red">kasyna</span></h2>
+          <div className="flex flex-col gap-8">
+            {/* Example casino card */}
+            <div className="w-full bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60">
+              <div className="flex-shrink-0 flex flex-col items-center w-40">
+                <Image src="/legiano.png" alt="Casino Logo" width={200} height={200} className="mb-2" />
+              </div>
+              <div className="flex-1 flex flex-col gap-2">
+                <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#a8002fcc]">100% BONUS POWITALNY + 200FS</div>
+                <div className="text-sm text-gray-100 mb-2">
+                  <span className="font-bold">Największe plusy:</span> 100% bonusu do 2250 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK. <br /><br/>Z kodem KASJO 150% do pierwszej wpłaty!
+                </div>
+              </div>
+              <div className="flex flex-col gap-2 w-40 relative">
+                <button
+                  className="bg-gradient-to-r from-[#ff0033] via-[#ff0055] to-[#a8002f] cursor-pointer hover:from-[#a8002f] hover:to-[#ff0033] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95"
+                  type="button"
+                  onClick={handleCopy}
+                >
+                  {copied ? "Skopiowano" : "KOD: KASJO"}
+                </button>
+                <a href="https://lgno.monvaki.com/?mid=267041_1574918" className="group" target="_blank">
+                  <button className="bg-gradient-to-r from-[#ff0033] via-[#ff0055] to-[#a8002f] cursor-pointer hover:from-[#a8002f] hover:to-[#ff0033] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95">
+                    Odbierz bonusy →
+                  </button>
+                </a>
+              </div>
+            </div>
+            {/* Repeat for more casinos */}
+            <div className="w-full bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60">
+              <div className="flex-shrink-0 flex flex-col items-center w-40">
+                <Image src="/spinbara.png" alt="Casino Logo" width={200} height={200} className="mb-2" />
+              </div>
+              <div className="flex-1 flex flex-col gap-2">
+                <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#a8002fcc]">100% BONUS POWITALNY + 200FS</div>
+                <div className="text-sm text-gray-100 mb-2">
+                  <span className="font-bold">Największe plusy:</span> 100% bonusu do 2250 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK <br /><br/>Z kodem KASJO 150% do pierwszej wpłaty!
+                </div>
+              </div>
+              <div className="flex flex-col gap-2 w-40 relative">
+                <button
+                  className="bg-gradient-to-r from-[#ff0033] via-[#ff0055] to-[#a8002f] cursor-pointer hover:from-[#a8002f] hover:to-[#ff0033] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95"
+                  type="button"
+                  onClick={handleCopySpinbara}
+                >
+                  {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
+                </button>
+                <a href="https://spnbr.monvaki.com/?mid=267041_1760614" className="group" target="_blank">
+                  <button className="bg-gradient-to-r from-[#ff0033] via-[#ff0055] to-[#a8002f] cursor-pointer hover:from-[#a8002f] hover:to-[#ff0033] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95">
+                    Odbierz bonusy →
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+         
+          <div className="w-full flex justify-center mb-2">
+            <div className="w-full max-w-6xl">
+              <Image src="/hero-bg.jpg" alt="Stream" width={1200} height={260} className="rounded-2xl object-cover w-full h-[180px] sm:h-[220px] md:h-[260px]" />
+            </div>
+          </div>
+          <div className="w-full text-center text-sm text-gray-400 mt-2">kontakt biznesowy: <a href="mailto:wspolpracadonkasjo@gmail.com">wspolpracadonkasjo@gmail.com</a></div>
+        </div>
+      </section>
+
+      {/* Main Content Layout - stacked casino cards and instructions */}
+      <main className="w-full max-w-6xl mx-auto flex flex-col gap-16 px-4 py-12 flex-1">
+         <div className="relative w-full flex justify-center mb-8 mt-4">
             <div className="flex flex-col sm:flex-row gap-6 w-full justify-center z-10 relative">
             <div className="flex-1 min-w-[260px] bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-2xl p-6 flex flex-col items-start shadow-lg border border-[#a8002f]/60">
                 <span className="text-white font-extrabold text-xl mb-2 drop-shadow-[0_1px_4px_#a8002fcc]">DOŁĄCZ DO KANAŁU NADAWCZEGO I ZGARNIJ BLIKA!</span>
@@ -51,75 +135,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-full flex justify-center mb-2">
-            <div className="w-full max-w-6xl">
-              <Image src="/hero-bg.jpg" alt="Stream" width={1200} height={260} className="rounded-2xl object-cover w-full h-[180px] sm:h-[220px] md:h-[260px]" />
-            </div>
-          </div>
-          <div className="w-full text-center text-sm text-gray-400 mt-2">kontakt biznesowy: <a href="mailto:wspolpracadonkasjo@gmail.com">wspolpracadonkasjo@gmail.com</a></div>
-        </div>
-      </section>
-
-      {/* Main Content Layout - stacked casino cards and instructions */}
-      <main className="w-full max-w-6xl mx-auto flex flex-col gap-16 px-4 py-12 flex-1">
-        {/* Recommended Casinos - stacked wide cards */}
-        <section className="w-full mb-12">
-          <h2 className="text-3xl font-extrabold mb-10 text-center">Polecane <span className="text-theme-red">kasyna</span></h2>
-          <div className="flex flex-col gap-8">
-            {/* Example casino card */}
-            <div className="w-full bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60">
-              <div className="flex-shrink-0 flex flex-col items-center w-40">
-                <Image src="/legiano.png" alt="Casino Logo" width={200} height={200} className="mb-2" />
-              </div>
-              <div className="flex-1 flex flex-col gap-2">
-                <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#a8002fcc]">100% BONUS POWITALNY + 200FS</div>
-                <div className="text-sm text-gray-100 mb-2">
-                  <span className="font-bold">Największe plusy:</span> 100% bonusu do 2250 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK
-                </div>
-              </div>
-              <div className="flex flex-col gap-2 w-40">
-                <a href="https://lgno.monvaki.com/?mid=267041_1574918" className="group" target="_blank">
-                  <button className="bg-gradient-to-r from-[#ff0033] via-[#ff0055] to-[#a8002f] cursor-pointer hover:from-[#a8002f] hover:to-[#ff0033] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95">
-                    Odbierz bonusy →
-                  </button>
-                </a>
-              </div>
-            </div>
-            {/* Repeat for more casinos */}
-            <div className="w-full bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60">
-              <div className="flex-shrink-0 flex flex-col items-center w-40">
-                <Image src="/spinbara.png" alt="Casino Logo" width={200} height={200} className="mb-2" />
-              </div>
-              <div className="flex-1 flex flex-col gap-2">
-                <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#a8002fcc]">100% BONUS POWITALNY + 200FS</div>
-                <div className="text-sm text-gray-100 mb-2">
-                  <span className="font-bold">Największe plusy:</span> 100% bonusu do 2250 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK
-                </div>
-              </div>
-              <div className="flex flex-col gap-2 w-40">
-                <a href="https://spnbr.monvaki.com/?mid=267041_1760614" className="group" target="_blank">
-                  <button className="bg-gradient-to-r from-[#ff0033] via-[#ff0055] to-[#a8002f] cursor-pointer hover:from-[#a8002f] hover:to-[#ff0033] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95">
-                    Odbierz bonusy →
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="w-full bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60">
-              <div className="flex-shrink-0 flex flex-col items-center w-40">
-                <Image src="/brak.png" alt="Casino Logo" width={100} height={100} className="mb-2" />
-              </div>
-              <div className="flex-1 flex flex-col gap-2">
-                <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#a8002fcc]">WKRÓTCE!</div>
-                <div className="text-sm text-gray-100 mb-2">
-                  
-                </div>
-              </div>
-              <div className="flex flex-col gap-2 w-40">
-                
-              </div>
-            </div>
-          </div>
-        </section>
 
         {/* Useful Instructions - row of cards with ribbons */}
         <section className="w-full mb-12">
