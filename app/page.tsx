@@ -49,6 +49,37 @@ export default function Home() {
   <div className="flex flex-col gap-8">
     {/* PODMIENIONA SEKCJA BANEROWA */}
     <div className="w-full flex flex-col gap-8">
+      {/* Baner ALLYSPIN */}
+      <div className="w-full bg-gradient-to-br from-[#2a0a3a] via-[#7a00a8] to-[#1a1010] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#7a00a8]/60">
+        <div className="flex-shrink-0 flex flex-col items-center w-40">
+          <Image src="/ally.png" alt="Allyspin Logo" width={200} height={200} className="mb-2" />
+        </div>
+        <div className="flex-1 flex flex-col gap-2">
+          <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#7a00a8cc]">
+            100% BONUS POWITALNY + 200FS
+          </div>
+          <div className="text-sm text-gray-100 mb-2">
+            <span className="font-bold">Największe plusy:</span> 100% bonusu do 2250 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK.
+            <br /><br />Z kodem KASJO 150% do pierwszej wpłaty!
+          </div>
+        </div>
+        <div className="flex flex-col gap-2 w-40 relative">
+          <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
+          <button
+            className="bg-gradient-to-r from-[#7a00ff] via-[#a855f7] to-[#7a00a8] cursor-pointer hover:from-[#7a00a8] hover:to-[#7a00ff] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#7a00a8cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95"
+            type="button"
+            onClick={handleCopy}
+          >
+            {copied ? "Skopiowano" : "KOD: KASJO"}
+          </button>
+          <a href="https://all.monvaki.com/?mid=267041_1570551" className="group" target="_blank">
+            <button className="bg-gradient-to-r from-[#7a00ff] via-[#a855f7] to-[#7a00a8] cursor-pointer hover:from-[#7a00a8] hover:to-[#7a00ff] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#7a00a8cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95">
+              Odbierz bonusy →
+            </button>
+          </a>
+        </div>
+      </div>
+
       {/* Baner Legiano */}
       <div className="w-full bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60">
         <div className="flex-shrink-0 flex flex-col items-center w-40">
