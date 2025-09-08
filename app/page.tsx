@@ -60,18 +60,10 @@ export default function Home() {
           </div>
           <div className="text-sm text-gray-100 mb-2">
             <span className="font-bold">Największe plusy:</span> 100% bonusu do 2250 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK.
-            <br /><br />Z kodem KASJO 150% do pierwszej wpłaty!
+            <br /><br />
           </div>
         </div>
         <div className="flex flex-col gap-2 w-40 relative">
-          <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
-          <button
-            className="bg-gradient-to-r from-[#7a00ff] via-[#a855f7] to-[#7a00a8] cursor-pointer hover:from-[#7a00a8] hover:to-[#7a00ff] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#7a00a8cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95"
-            type="button"
-            onClick={handleCopy}
-          >
-            {copied ? "Skopiowano" : "KOD: KASJO"}
-          </button>
           <a href="https://all.monvaki.com/?mid=267041_1570551" className="group" target="_blank">
             <button className="bg-gradient-to-r from-[#7a00ff] via-[#a855f7] to-[#7a00a8] cursor-pointer hover:from-[#7a00a8] hover:to-[#7a00ff] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#7a00a8cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95">
               Odbierz bonusy →
