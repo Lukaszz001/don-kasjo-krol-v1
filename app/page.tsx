@@ -47,12 +47,13 @@ export default function Home() {
 <section className="w-full mb-12">
   <h2 className="text-3xl font-extrabold mb-10 text-center">Polecane <span className="text-theme-red">kasyna</span></h2>
   <div className="flex flex-col gap-8">
-   {/* PODMIENIONA SEKCJA BANEROWA */}
+{/* PODMIENIONA SEKCJA BANEROWA */}
 <div className="w-full flex flex-col gap-8">
-  {/* Baner Spinbara (fioletowy, nr 1) */}
+
+  {/* Baner Legiano (fioletowy, nr 1) */}
   <div className="w-full bg-gradient-to-br from-[#2a0a3a] via-[#7a00a8] to-[#1a1010] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#7a00a8]/60">
     <div className="flex-shrink-0 flex flex-col items-center w-40">
-      <Image src="/spinbara.png" alt="Spinbara Logo" width={200} height={200} className="mb-2" />
+      <Image src="/legiano.png" alt="Legiano Logo" width={200} height={200} className="mb-2" />
     </div>
     <div className="flex-1 flex flex-col gap-2">
       <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#7a00a8cc]">
@@ -67,11 +68,11 @@ export default function Home() {
       <button
         className="bg-gradient-to-r from-[#7a00ff] via-[#a855f7] to-[#7a00a8] cursor-pointer hover:from-[#7a00a8] hover:to-[#7a00ff] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#7a00a8cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95"
         type="button"
-        onClick={handleCopySpinbara}
+        onClick={handleCopy}
       >
-        {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
+        {copied ? "Skopiowano" : "KOD: KASJO"}
       </button>
-      <a href="https://spnbr.monvaki.com/?mid=267041_1760614" className="group" target="_blank">
+      <a href="https://lgno.monvaki.com/?mid=267041_1574918" className="group" target="_blank">
         <button className="bg-gradient-to-r from-[#7a00ff] via-[#a855f7] to-[#7a00a8] cursor-pointer hover:from-[#7a00a8] hover:to-[#7a00ff] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#7a00a8cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95">
           Odbierz bonusy →
         </button>
@@ -79,33 +80,37 @@ export default function Home() {
     </div>
   </div>
 
-  {/* Baner NV Casino (pomarańczowy, nr 2) */}
-  <div className="w-full bg-gradient-to-br from-[#ff7a00] via-[#ff9a33] to-[#ff5c00] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#ff7a00]/60">
+  {/* Baner Spinbara (czerwono-bordowy, nr 2) */}
+  <div className="w-full bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60">
     <div className="flex-shrink-0 flex flex-col items-center w-40">
-      <Image src="/nv.png" alt="NV Casino Logo" width={200} height={200} className="mb-2" />
+      <Image src="/spinbara.png" alt="Spinbara Logo" width={200} height={200} className="mb-2" />
     </div>
     <div className="flex-1 flex flex-col gap-2">
-      <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#ff7a00cc]">
-        100% BONUS POWITALNY + 50FS NA LE BANDIT
+      <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#a8002fcc]">
+        100% BONUS POWITALNY + 200FS
       </div>
       <div className="text-sm text-gray-100 mb-2">
-        <span className="font-bold">Największe plusy:</span> Pakiet powitalny aż do 10000 PLN. Ogromny wybór dostawców i wygodna aplikacja mobilna.
+        <span className="font-bold">Największe plusy:</span> 100% bonusu do 2250 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK. <br /><br/>Z kodem KASJO 150% do pierwszej wpłaty!
       </div>
     </div>
     <div className="flex flex-col gap-2 w-40 relative">
-      <a
-        href="https://settree.com/23858/29327?lp=00&click_id=%7BREPLACE%7D&sub_id_1=%7BREPLACE%7D&sub_id_2=%7BREPLACE%7D&sub_id_3=%7BREPLACE%7D&sub_id_4=%7BREPLACE%7D&param=%7BATP%7D"
-        className="group"
-        target="_blank"
+      <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
+      <button
+        className="bg-gradient-to-r from-[#ff0033] via-[#ff0055] to-[#a8002f] cursor-pointer hover:from-[#a8002f] hover:to-[#ff0033] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95"
+        type="button"
+        onClick={handleCopySpinbara}
       >
-        <button className="bg-gradient-to-r from-[#ff7a00] via-[#ff9a33] to-[#ff5c00] cursor-pointer hover:from-[#ff9a33] hover:to-[#ff7a00] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#ff7a00cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95">
+        {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
+      </button>
+      <a href="https://spnbr.monvaki.com/?mid=267041_1760614" className="group" target="_blank">
+        <button className="bg-gradient-to-r from-[#ff0033] via-[#ff0055] to-[#a8002f] cursor-pointer hover:from-[#a8002f] hover:to-[#ff0033] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95">
           Odbierz bonusy →
         </button>
       </a>
     </div>
   </div>
 
-  {/* Baner SpinBetter */}
+  {/* Baner SpinBetter (czerwono-bordowy, nr 3) */}
   <div className="w-full bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60">
     <div className="flex-shrink-0 flex flex-col items-center w-40">
       <Image src="/spinbetter.png" alt="SpinBetter Logo" width={200} height={200} className="mb-2" />
@@ -135,7 +140,7 @@ export default function Home() {
     </div>
   </div>
 
-  {/* Baner Allyspin */}
+  {/* Baner Allyspin (czerwono-bordowy, nr 4) */}
   <div className="w-full bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60">
     <div className="flex-shrink-0 flex flex-col items-center w-40">
       <Image src="/ally.png" alt="Allyspin Logo" width={200} height={200} className="mb-2" />
@@ -146,7 +151,6 @@ export default function Home() {
       </div>
       <div className="text-sm text-gray-100 mb-2">
         <span className="font-bold">Największe plusy:</span> 100% bonusu do 2250 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK.
-        <br /><br />
       </div>
     </div>
     <div className="flex flex-col gap-2 w-40 relative">
@@ -158,33 +162,6 @@ export default function Home() {
     </div>
   </div>
 
-  {/* Baner Legiano */}
-  <div className="w-full bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60">
-    <div className="flex-shrink-0 flex flex-col items-center w-40">
-      <Image src="/legiano.png" alt="Casino Logo" width={200} height={200} className="mb-2" />
-    </div>
-    <div className="flex-1 flex flex-col gap-2">
-      <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#a8002fcc]">100% BONUS POWITALNY + 200FS</div>
-      <div className="text-sm text-gray-100 mb-2">
-        <span className="font-bold">Największe plusy:</span> 100% bonusu do 2250 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK. <br /><br/>Z kodem KASJO 150% do pierwszej wpłaty!
-      </div>
-    </div>
-    <div className="flex flex-col gap-2 w-40 relative">
-      <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
-      <button
-        className="bg-gradient-to-r from-[#ff0033] via-[#ff0055] to-[#a8002f] cursor-pointer hover:from-[#a8002f] hover:to-[#ff0033] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95"
-        type="button"
-        onClick={handleCopy}
-      >
-        {copied ? "Skopiowano" : "KOD: KASJO"}
-      </button>
-      <a href="https://lgno.monvaki.com/?mid=267041_1574918" className="group" target="_blank">
-        <button className="bg-gradient-to-r from-[#ff0033] via-[#ff0055] to-[#a8002f] cursor-pointer hover:from-[#a8002f] hover:to-[#ff0033] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 group-hover:scale-105 group-active:scale-95">
-          Odbierz bonusy →
-        </button>
-      </a>
-    </div>
-  </div>
 </div>
 </div>
 </section>
