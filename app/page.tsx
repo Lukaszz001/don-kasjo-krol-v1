@@ -47,8 +47,8 @@ export default function Home() {
 <section className="w-full mb-12">
   <h2 className="text-3xl font-extrabold mb-10 text-center">Polecane <span className="text-theme-red">kasyna</span></h2>
   <div className="flex flex-col gap-8">
-    {/* PODMIENIONA SEKCJA BANEROWA */}
-    <div className="w-full flex flex-col gap-8">
+   {/* PODMIENIONA SEKCJA BANEROWA */}
+<div className="w-full flex flex-col gap-8">
   {/* Baner Spinbara (żółty) */}
   <div className="w-full bg-gradient-to-br from-[#facc15] via-[#eab308] to-[#ca8a04] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#facc15]/60">
     <div className="flex-shrink-0 flex flex-col items-center w-40">
@@ -106,6 +106,42 @@ export default function Home() {
       </a>
     </div>
   </div>
+
+ {/* Baner FatPirate (zielony z naklejką NEW) */}
+<div className="w-full bg-gradient-to-br from-[#16a34a] via-[#22c55e] to-[#15803d] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#16a34a]/60 relative">
+  {/* Naklejka NEW */}
+  <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
+    NEW
+  </div>
+
+  <div className="flex-shrink-0 flex flex-col items-center w-40">
+    <Image src="/pirate.png" alt="FatPirate Logo" width={200} height={200} className="mb-2" />
+  </div>
+  <div className="flex-1 flex flex-col gap-2">
+    <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#15803dcc]">
+      100% BONUS POWITALNY + 200FS
+    </div>
+    <div className="text-sm text-gray-100 mb-2">
+      <span className="font-bold">Największe plusy:</span> 100% bonusu do 2250 PLN, 200 darmowych obrotów, możliwość płatności BLIK.
+    </div>
+  </div>
+  <div className="flex flex-col gap-2 w-40 relative">
+    <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
+    <button
+      className="bg-gradient-to-r from-[#16a34a] via-[#22c55e] to-[#15803d] cursor-pointer hover:from-[#15803d] hover:to-[#16a34a] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#15803dcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
+      type="button"
+      onClick={handleCopy}
+    >
+      {copied ? "Skopiowano" : "KOD: KASJO"}
+    </button>
+    <a href="https://ftp.lynmonkel.com/?mid=318852_1878066" className="group" target="_blank" rel="noopener noreferrer">
+      <button className="bg-gradient-to-r from-[#16a34a] via-[#22c55e] to-[#15803d] cursor-pointer hover:from-[#15803d] hover:to-[#16a34a] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#15803dcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
+        Odbierz bonusy →
+      </button>
+    </a>
+  </div>
+</div>
+
 
   {/* Baner SpinBetter (czerwono-bordowy) */}
   <div className="w-full bg-gradient-to-br from-[#a8002f] via-[#ff0033] to-[#800000] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60">
@@ -169,7 +205,7 @@ export default function Home() {
   </div>
 </div>
 
-  </div>
+</div>
 </section>
 
          {/* Poker Section */}
