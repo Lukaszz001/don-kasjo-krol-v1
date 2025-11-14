@@ -182,7 +182,7 @@ export default function Home() {
 </div>
 </section>
 
-         {/* Poker Section */}
+     {/*    {/* Poker Section */}
 <section className="w-full mb-12">
   <h2 className="text-3xl font-extrabold mb-10 text-center">
     <span className="text-theme-red">Poker</span>
@@ -222,7 +222,7 @@ export default function Home() {
       </a>
     </div>
   </div>
-</section>
+</section> */}
  
           <div className="w-full flex justify-center mb-2">
             <div className="w-full max-w-6xl">
