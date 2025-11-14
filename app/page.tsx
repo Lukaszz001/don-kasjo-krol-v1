@@ -181,48 +181,6 @@ export default function Home() {
 </div>
 </div>
 </section>
-
-     {/*    {/* Poker Section */}
-<section className="w-full mb-12">
-  <h2 className="text-3xl font-extrabold mb-10 text-center">
-    <span className="text-theme-red">Poker</span>
-  </h2>
-
-  {/* Poker Banner */}
-  <div className="w-full bg-gradient-to-br from-[#ffffff] via-[#f5f5f5] to-[#e0e0e0] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#d9d9d9]/60">
-    {/* Logo */}
-    <div className="flex-shrink-0 flex flex-col items-center w-40">
-      <Image src="/poker.png" alt="Poker Logo" width={200} height={200} className="mb-2" />
-    </div>
-
-    {/* Tekst */}
-    <div className="flex-1 flex flex-col gap-2">
-      <div className="bg-white/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-gray-900 drop-shadow-[0_1px_4px_#b0b0b0cc]">
-        $2,000,000 do wygrania we Freerollach
-      </div>
-      <div className="text-sm text-gray-700 mb-2">
-        <span className="font-bold">Największe plusy:</span> Codziennie darmowe turnieje: $10,000 gwarantowane od poniedziałku do soboty oraz aż $100,000 w niedzielę.
-      </div>
-    </div>
-
-    {/* Przycisk */}
-    <div className="flex flex-col gap-2 w-40 relative">
-      <span className="text-xs text-gray-500 mb-1 text-center">Kliknij, aby skopiować.</span>
-      <button
-        className="bg-white/80 cursor-pointer hover:bg-gray-200 text-gray-900 rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#b0b0b0cc] border border-gray-300 border-opacity-80 border-[1.5px] transition-all duration-300 hover:scale-105 active:scale-95"
-        type="button"
-        onClick={handleCopy}
-      >
-        {copied ? "Skopiowano" : "KOD: KASJO"}
-      </button>
-      <a href="https://tracking.wptpartners.com/visit/?bta=36435&nci=10501" target="_blank" className="group">
-        <button className="bg-white/80 cursor-pointer hover:bg-gray-200 text-gray-900 rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#b0b0b0cc] border border-gray-300 border-opacity-80 border-[1.5px] transition-all duration-300 hover:scale-105 active:scale-95 mt-2 w-full">
-          Odbierz bonusy →
-        </button>
-      </a>
-    </div>
-  </div>
-</section> */}
  
           <div className="w-full flex justify-center mb-2">
             <div className="w-full max-w-6xl">
