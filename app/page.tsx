@@ -50,42 +50,42 @@ export default function Home() {
 {/* PODMIENIONA SEKCJA BANEROWA */}
 <div className="w-full flex flex-col gap-8">
 
-  {/* Baner 1 – Alf (fioletowy) */}
-  <div className="w-full bg-gradient-to-br from-[#7a00a8] via-[#a855f7] to-[#4c007d] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#7a00a8]/60 relative">
-    
-    {/* Naklejka NEW */}
-    <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
-      NEW
-    </div>
+{/* Baner 1 – Alf (ciemnozielony) */}
+<div className="w-full bg-gradient-to-br from-[#14532d] via-[#15803d] to-[#22c55e] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#14532d]/60 relative">
 
-    <div className="flex-shrink-0 flex flex-col items-center w-40">
-      <Image src="/alf.png" alt="Alf Logo" width={200} height={200} className="mb-2" />
+  {/* Naklejka NEW */}
+  <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
+    NEW
+  </div>
+
+  <div className="flex-shrink-0 flex flex-col items-center w-40">
+    <Image src="/alf.png" alt="Alf Logo" width={200} height={200} className="mb-2" />
+  </div>
+  <div className="flex-1 flex flex-col gap-2">
+    <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#22c55ecc]">
+      100% BONUS POWITALNY + 200FS
     </div>
-    <div className="flex-1 flex flex-col gap-2">
-      <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#a855f7cc]">
-        100% BONUS POWITALNY + 200FS
-      </div>
-      <div className="text-sm text-gray-100 mb-2">
-        <span className="font-bold">Największe plusy:</span> 100% bonusu do 2250 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK.
-        <br /><br />Z kodem KASJO 150% do pierwszej wpłaty!
-      </div>
-    </div>
-    <div className="flex flex-col gap-2 w-40 relative">
-      <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
-      <button
-        className="bg-gradient-to-r from-[#7a00a8] via-[#a855f7] to-[#4c007d] cursor-pointer hover:from-[#4c007d] hover:to-[#7a00a8] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a855f7cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
-        type="button"
-        onClick={handleCopySpinbara}
-      >
-        {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
-      </button>
-      <a href="https://alcw.monalvor.com/?mid=267041_1943815" className="group" target="_blank">
-        <button className="bg-gradient-to-r from-[#7a00a8] via-[#a855f7] to-[#4c007d] cursor-pointer hover:from-[#4c007d] hover:to-[#7a00a8] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a855f7cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
-          Odbierz bonusy →
-        </button>
-      </a>
+    <div className="text-sm text-gray-100 mb-2">
+      <span className="font-bold">Największe plusy:</span> 100% bonusu do 2250 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK.
+      <br /><br />Z kodem KASJO 150% do pierwszej wpłaty!
     </div>
   </div>
+  <div className="flex flex-col gap-2 w-40 relative">
+    <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
+    <button
+      className="bg-gradient-to-r from-[#14532d] via-[#15803d] to-[#22c55e] cursor-pointer hover:from-[#22c55e] hover:to-[#14532d] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#22c55ecc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
+      type="button"
+      onClick={handleCopySpinbara}
+    >
+      {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
+    </button>
+    <a href="https://alcw.monalvor.com/?mid=267041_1943815" className="group" target="_blank">
+      <button className="bg-gradient-to-r from-[#14532d] via-[#15803d] to-[#22c55e] cursor-pointer hover:from-[#22c55e] hover:to-[#14532d] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#22c55ecc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
+        Odbierz bonusy →
+      </button>
+    </a>
+  </div>
+</div>
 
   {/* Baner 2 – Lemon (niebieski) */}
   <div className="w-full bg-gradient-to-br from-[#1e3a8a] via-[#3b82f6] to-[#60a5fa] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#1e3a8a]/60 relative">
