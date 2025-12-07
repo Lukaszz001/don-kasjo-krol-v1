@@ -220,57 +220,85 @@ export default function Home() {
 </section>
 
  
-          <div className="w-full flex justify-center mb-2">
+          
+
+      {/* Main Content Layout - stacked casino cards and instructions */}
+      <div className="w-full flex justify-center">
+  <div className="w-full max-w-6xl bg-gradient-to-r from-white via-[#f8f8ff] to-[#e6e6ff] rounded-2xl p-6 flex flex-col items-center gap-6 shadow-lg border border-[#dcdcff]/60">
+    
+    {/* Środkowy napis */}
+    <div className="text-center mb-4">
+      <span className="text-gray-800 font-extrabold text-lg sm:text-xl drop-shadow-md">
+        Dołącz do naszej społeczności i zgarniaj najlepsze promocje i BLIKI!
+      </span>
+    </div>
+
+   <div className="w-full flex flex-col sm:flex-row items-center justify-between gap-6">
+  {/* Telegram */}
+  <div className="flex-1 flex flex-col items-center text-center gap-2">
+    <Image src="/telegram-icon.png" alt="Telegram" width={40} height={40} />
+    <span className="text-gray-800 font-extrabold text-lg">Telegram</span>
+    <a href="https://t.me/+pIH5hbyqgUI2NzA8" target="_blank" className="mt-2">
+      <button className="bg-[#4b0082] text-white font-bold px-4 py-2 rounded-full shadow hover:scale-105 transition-transform">
+        Dołącz
+      </button>
+    </a>
+  </div>
+
+  {/* Discord */}
+  <div className="flex-1 flex flex-col items-center text-center gap-2">
+    <Image src="/discord-icon.png" alt="Discord" width={40} height={40} />
+    <span className="text-gray-800 font-extrabold text-lg">Discord</span>
+    <a href="https://discord.com/invite/juJd2jQQrs" target="_blank" className="mt-2">
+      <button className="bg-[#4b0082] text-white font-bold px-4 py-2 rounded-full shadow hover:scale-105 transition-transform">
+        Dołącz
+      </button>
+    </a>
+  </div>
+
+  {/* Kanał Nadawczy */}
+  <div className="flex-1 flex flex-col items-center text-center gap-2">
+    <Image src="/instagram-icon.png" alt="Kanał Nadawczy" width={40} height={40} />
+    <span className="text-gray-800 font-extrabold text-lg">Kanał Nadawczy</span>
+    <a href="https://www.instagram.com/kingdonkasjo/" target="_blank" className="mt-2">
+      <button className="bg-[#4b0082] text-white font-bold px-4 py-2 rounded-full shadow hover:scale-105 transition-transform">
+        Dołącz
+      </button>
+    </a>
+  </div>
+  </div>
+  </div>
+</div>
+
+
+
+<div className="w-full flex justify-center mb-2">
             <div className="w-full max-w-6xl">
-              <Image src="/hero-bg.jpg" alt="Stream" width={1200} height={260} className="rounded-2xl object-cover w-full h-[180px] sm:h-[220px] md:h-[260px]" />
             </div>
           </div>
           <div className="w-full text-center text-sm text-gray-400 mt-2">kontakt biznesowy: <a href="mailto:wspolpracadonkasjo@gmail.com">wspolpracadonkasjo@gmail.com</a></div>
         </div>
       </section>
 
-      {/* Main Content Layout - stacked casino cards and instructions */}
-      <main className="w-full max-w-6xl mx-auto flex flex-col gap-16 px-4 py-12 flex-1">
-         <div className="relative w-full flex justify-center mb-8 mt-4">
-            <div className="flex flex-col sm:flex-row gap-6 w-full justify-center z-10 relative">
-            <div className="flex-1 min-w-[260px] bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-2xl p-6 flex flex-col items-start shadow-lg border border-[#a8002f]/60">
-                <span className="text-white font-extrabold text-xl mb-2 drop-shadow-[0_1px_4px_#a8002fcc]">DOŁĄCZ DO KANAŁU NADAWCZEGO I ZGARNIJ BLIKA!</span>
-                <span className="text-gray-100 mb-4">Na moim kanale regularnie publikuję kody BLIK na wpłaty do polecanych kasyn. Dołącz i korzystaj z okazji!</span>
-                <a href="https://www.instagram.com/kingdonkasjo/" className="group" target="_blank">
-                  <button className="mt-auto bg-gradient-to-r from-[#a8002f] cursor-pointer via-[#ff0033] to-[#ff0055] hover:from-[#ff0033] hover:to-[#a8002f] text-white border border-white border-opacity-80 border-[1.5px] px-4 py-2 rounded-full font-bold text-sm shadow transition-all duration-300 drop-shadow-[0_1px_4px_#a8002fcc] group-hover:scale-105 group-active:scale-95">
-                    Dołącz do kanału
-                  </button>
-                </a>
-              </div>
-            <div className="flex-1 min-w-[260px] bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-2xl p-6 flex flex-col items-start shadow-lg border border-[#a8002f]/60">
-                <span className="text-white font-extrabold text-xl mb-2 drop-shadow-[0_1px_4px_#a8002fcc]">WBIJ NA DISCORDA PO EKSKLUZYWNE KODY I BONUSY!</span>
-                <span className="text-gray-100 mb-4">Na serwerze znajdziesz społeczność graczy i losowe kody BLIK do najlepszych kasyn. Nie przegap tego!</span>
-                <a href="https://discord.com/invite/juJd2jQQrs" className="group" target="_blank">
-                  <button className="mt-auto bg-gradient-to-r from-[#a8002f] cursor-pointer via-[#ff0033] to-[#ff0055] hover:from-[#ff0033] hover:to-[#a8002f] text-white border border-white border-opacity-80 border-[1.5px] px-4 py-2 rounded-full font-bold text-sm shadow transition-all duration-300 drop-shadow-[0_1px_4px_#a8002fcc] group-hover:scale-105 group-active:scale-95">
-                    Dołącz do discorda
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-
         {/* Useful Instructions - row of cards with ribbons */}
         <section className="w-full mb-12">
-          <h2 className="text-3xl font-extrabold mb-10 text-center">Przydatne <span className="text-theme-red">Instrukcje</span></h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <a href="/spinbara-wplata" className="relative bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-2xl p-6 flex flex-col items-start shadow-lg border border-[#a8002f]/60 transition hover:scale-[1.03]" style={{ textDecoration: 'none' }}>
-                <span className="absolute -top-3 left-4 bg-theme-red text-white text-xs font-bold px-3 py-1 rounded-full shadow">PORADNIK</span>
-                <span className="text-lg font-extrabold mb-2 text-white drop-shadow-[0_1px_4px_#a8002fcc]">Jak wpłacić pieniądze na kasyno Spinbara?</span>
-                <span className="text-gray-100 text-base">Praktyczny poradnik krok po kroku dotyczący wpłaty środków na Spinbara.</span>
-              </a>
-            <a href="/legiano-wplata" className="relative bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-2xl p-6 flex flex-col items-start shadow-lg border border-[#a8002f]/60 transition hover:scale-[1.03]" style={{ textDecoration: 'none' }}>
-              <span className="absolute -top-3 left-4 bg-theme-red text-white text-xs font-bold px-3 py-1 rounded-full shadow">PORADNIK</span>
-              <span className="text-lg font-extrabold mb-2 text-white drop-shadow-[0_1px_4px_#a8002fcc]">Jak wpłacić pieniądze na kasyno Legiano?</span>
-              <span className="text-gray-100 text-base">Praktyczny poradnik krok po kroku dotyczący wpłaty środków na Legiano.</span>
-            </a>
-          </div>
-        </section>
-      </main>
+  <h2 className="text-3xl font-extrabold mb-10 text-center">
+    Przydatne <span className="text-theme-red">Instrukcje</span>
+  </h2>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+    <a href="/spinbara-wplata" className="relative bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-2xl p-6 flex flex-col items-start shadow-lg border border-[#a8002f]/60 transition hover:scale-[1.03]" style={{ textDecoration: 'none' }}>
+      <span className="absolute -top-3 left-4 bg-theme-red text-white text-xs font-bold px-3 py-1 rounded-full shadow">PORADNIK</span>
+      <span className="text-lg font-extrabold mb-2 text-white drop-shadow-[0_1px_4px_#a8002fcc]">Jak wpłacić pieniądze na kasyno Spinbara?</span>
+      <span className="text-gray-100 text-base">Praktyczny poradnik krok po kroku dotyczący wpłaty środków na Spinbara.</span>
+    </a>
+    <a href="/legiano-wplata" className="relative bg-gradient-to-br from-[#3a0a16] via-[#a8002f] to-[#1a1010] rounded-2xl p-6 flex flex-col items-start shadow-lg border border-[#a8002f]/60 transition hover:scale-[1.03]" style={{ textDecoration: 'none' }}>
+      <span className="absolute -top-3 left-4 bg-theme-red text-white text-xs font-bold px-3 py-1 rounded-full shadow">PORADNIK</span>
+      <span className="text-lg font-extrabold mb-2 text-white drop-shadow-[0_1px_4px_#a8002fcc]">Jak wpłacić pieniądze na kasyno Legiano?</span>
+      <span className="text-gray-100 text-base">Praktyczny poradnik krok po kroku dotyczący wpłaty środków na Legiano.</span>
+    </a>
+  </div>
+</section>
+      
 
 
      {/* Footer */}
