@@ -68,7 +68,7 @@ export default function Home() {
     </div>
 
     <div className="text-sm text-gray-100 mb-2">
-      <span className="font-bold">Największe plusy:</span> 100% bonusu do 2250 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK.
+      <span className="font-bold">Największe plusy:</span> 150% bonusu do 2500 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK.
       <br /><br />Z kodem KASJO 150% do pierwszej wpłaty!
     </div>
 
@@ -115,7 +115,7 @@ export default function Home() {
     </div>
 
     <div className="text-sm text-gray-100 mb-2">
-      <span className="font-bold">Największe plusy:</span> 100% bonusu do 2250 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK.
+      <span className="font-bold">Największe plusy:</span> 150% bonusu do 2500 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK.
       <br /><br />Z kodem KASJO 150% do pierwszej wpłaty!
     </div>
 
@@ -153,7 +153,7 @@ export default function Home() {
         100% BONUS POWITALNY + 200FS
       </div>
       <div className="text-sm text-gray-100 mb-2">
-        <span className="font-bold">Największe plusy:</span> 100% bonusu do 2250 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK.
+        <span className="font-bold">Największe plusy:</span> 150% bonusu do 2500 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK.
         <br /><br />Z kodem KASJO 150% do pierwszej wpłaty!
       </div>
     </div>
@@ -184,7 +184,7 @@ export default function Home() {
         100% BONUS POWITALNY + 200FS
       </div>
       <div className="text-sm text-gray-100 mb-2">
-        <span className="font-bold">Największe plusy:</span> 100% bonusu do 2250 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK.
+        <span className="font-bold">Największe plusy:</span> 150% bonusu do 2500 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK.
         <br /><br />Z kodem KASJO 150% do pierwszej wpłaty!
       </div>
     </div>
