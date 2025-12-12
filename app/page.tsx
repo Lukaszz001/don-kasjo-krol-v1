@@ -88,7 +88,7 @@ export default function Home() {
     </div>
   </div>
 
- {/* Baner 2 – Dude (ciemniejszy żółto-czarny) */}
+{/* Baner 2 – Dude (ciemniejszy żółto-czarny) */}
 <div className="w-full bg-gradient-to-br from-[#b59f0b] via-[#a67c00] to-[#5c4000] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#b59f0b]/60 relative">
   <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
     NEW
@@ -101,13 +101,13 @@ export default function Home() {
       BONUS POWITALNY 300% + 150FS
     </div>
 
-    {/* Nowy pogrubiony tekst środkowy */}
-    <div className="text-white font-bold text-sm text-center mt-2 drop-shadow-[0_1px_4px_#b59f0bcc]">
-      NAJWYŻSZY BONUS POWITALNY!
-    </div>
-
     <div className="text-sm text-gray-100 mb-2">
       <span className="font-bold">Największe plusy:</span> Bonus powitalny 300% do 9000 PLN + 150 Darmowych Spinów.
+    </div>
+
+    {/* Przeniesiony pogrubiony tekst na dół */}
+    <div className="text-white font-bold text-sm text-center mt-2 drop-shadow-[0_1px_4px_#b59f0bcc]">
+      NAJWYŻSZY BONUS POWITALNY!
     </div>
   </div>
   <div className="flex flex-col gap-2 w-40 relative">
