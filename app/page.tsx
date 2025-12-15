@@ -32,7 +32,7 @@ export default function Home() {
             </a>
             <span className="text-xs text-green-500 font-bold whitespace-nowrap ml-2 sm:ml-0">● LIVE</span>
           </div>
-          <span className="hidden md:inline bg-[#18181b] px-3 py-1 rounded text-xs border border-[#222] text-white/80">STREAMY CODZIENNIE O 19 NA KICKU</span>
+          <span className="hidden md:inline bg-[#18181b] px-3 py-1 rounded text-xs border border-[#222] text-white/80">STREAMY CODZIENNIE O 20 NA KICKU</span>
         </div>
       </header>
 
@@ -50,7 +50,6 @@ export default function Home() {
 {/* PODMIENIONA SEKCJA BANEROWA */}
 <div className="w-full flex flex-col gap-8">
 
-  
   {/* Baner 1 – Alf (ciemniejszy fiolet) */}
   <div className="w-full bg-gradient-to-br from-[#4c1d95] via-[#5b21b6] to-[#6d28d9] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#4c1d95]/60 relative">
     <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
@@ -88,49 +87,79 @@ export default function Home() {
     </div>
   </div>
 
-{/* Baner 2 – Dude (ciemniejszy żółto-czarny) */}
-<div className="w-full bg-gradient-to-br from-[#b59f0b] via-[#a67c00] to-[#5c4000] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#b59f0b]/60 relative">
-  <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
+  {/* Baner 2 – Dude (ciemniejszy żółty) */}
+  <div className="w-full bg-gradient-to-br from-[#b59f0b] via-[#facc15] to-[#fde68a] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#b59f0b]/60 relative">
+    <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
+      NEW
+    </div>
+    <div className="flex-shrink-0 flex flex-col items-center w-40">
+      <Image src="/dude.png" alt="Dude Logo" width={200} height={200} className="mb-2" />
+    </div>
+    <div className="flex-1 flex flex-col gap-2">
+      <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#b59f0bcc]">
+        BONUS POWITALNY 300% + 150FS
+      </div>
+      <div className="text-sm text-gray-100 mb-2">
+        <span className="font-bold">Największe plusy:</span> Bonus powitalny 300% do 9000 PLN + 150 Darmowych Spinów.
+      </div>
+    </div>
+    <div className="flex flex-col gap-2 w-40 relative">
+      <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
+      <button
+        className="bg-gradient-to-r from-[#b59f0b] via-[#facc15] to-[#fde68a] cursor-pointer hover:from-[#fde68a] hover:to-[#b59f0b] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#b59f0bcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
+        type="button"
+        onClick={handleCopySpinbara}
+      >
+        {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
+      </button>
+      <a href="https://dudsp.lynmonkel.com/?mid=343304_1984676" className="group" target="_blank">
+        <button className="bg-gradient-to-r from-[#b59f0b] via-[#facc15] to-[#fde68a] cursor-pointer hover:from-[#fde68a] hover:to-[#b59f0b] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#b59f0bcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
+          Odbierz bonusy →
+        </button>
+      </a>
+    </div>
+  </div>
+
+{/* Baner 3 – Fireball (srebrny) */}
+<div className="w-full bg-gradient-to-br from-[#9ca3af] via-[#e5e7eb] to-[#6b7280] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#9ca3af]/60 relative">
+
+  {/* overlay przyciemniający */}
+  <div className="absolute inset-0 bg-black/35 rounded-3xl pointer-events-none"></div>
+
+  <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse z-10">
     NEW
   </div>
-  <div className="flex-shrink-0 flex flex-col items-center w-40">
-    <Image src="/dude.png" alt="Dude Logo" width={200} height={200} className="mb-2" />
-  </div>
-  <div className="flex-1 flex flex-col gap-2">
-    <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#b59f0bcc]">
-      BONUS POWITALNY 300% + 150FS
-    </div>
 
+  <div className="flex-shrink-0 flex flex-col items-center w-40 z-10">
+    <Image src="/fireball.png" alt="Fireball Logo" width={200} height={200} className="mb-2" />
+  </div>
+
+  <div className="flex-1 flex flex-col gap-2 z-10">
+    <div className="bg-[#18181b]/90 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#000000cc]">
+      100% BONUS POWITALNY + AŻ DO 5000FS
+    </div>
     <div className="text-sm text-gray-100 mb-2">
-      <span className="font-bold">Największe plusy:</span> Bonus powitalny 300% do 9000 PLN + 150 Darmowych Spinów.
-    </div>
-
-    {/* Przeniesiony pogrubiony tekst na dół */}
-    <div className="text-white font-bold text-sm text-center mt-2 drop-shadow-[0_1px_4px_#b59f0bcc]">
-      NAJWYŻSZY BONUS POWITALNY!
+      <span className="font-bold">Największe plusy:</span> 100% bonus od depozytu, 40FS na Gates of Olympus przed depozytem!
     </div>
   </div>
-  <div className="flex flex-col gap-2 w-40 relative">
-    {/* Tekst Kliknij aby skopiować teraz bardziej widoczny */}
-    <span className="text-xs text-white font-bold mb-1 text-center drop-shadow-[0_1px_2px_#000000]">
-      Kliknij, aby skopiować.
-    </span>
+
+  <div className="flex flex-col gap-2 w-40 relative z-10">
+    <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
     <button
-      className="bg-gradient-to-r from-[#b59f0b] via-[#facc15] to-[#fde68a] cursor-pointer hover:from-[#fde68a] hover:to-[#b59f0b] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#b59f0bcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
+      className="bg-gradient-to-r from-[#9ca3af] via-[#e5e7eb] to-[#6b7280] cursor-pointer hover:from-[#6b7280] hover:to-[#9ca3af] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#000000cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
       type="button"
       onClick={handleCopySpinbara}
     >
       {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
     </button>
-    <a href="https://dudsp.lynmonkel.com/?mid=343304_1984676" className="group" target="_blank">
-      <button className="bg-gradient-to-r from-[#b59f0b] via-[#facc15] to-[#fde68a] cursor-pointer hover:from-[#fde68a] hover:to-[#b59f0b] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#b59f0bcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
+    <a href="https://m.affs.com/redirect.aspx?mid=1275&sid=11620&cid=&pid=&affid=8583" className="group" target="_blank">
+      <button className="bg-gradient-to-r from-[#9ca3af] via-[#e5e7eb] to-[#6b7280] cursor-pointer hover:from-[#6b7280] hover:to-[#9ca3af] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#000000cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
         Odbierz bonusy →
       </button>
     </a>
   </div>
 </div>
-
-  {/* Baner 3 – Legiano (zielony) */}
+{/* Baner 3 – Legiano (zielony) */}
   <div className="w-full bg-gradient-to-br from-[#065f46] via-[#10b981] to-[#34d399] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#065f46]/60 relative">
     <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
       TOP 1
