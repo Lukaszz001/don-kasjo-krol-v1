@@ -227,6 +227,39 @@ export default function Home() {
     </div>
   </div>
 
+  {/* Baner – Bethall */}
+<div className="w-full bg-gradient-to-br from-[#a8002f] via-[#ff0033] to-[#800000] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60 relative">
+  <div className="flex-shrink-0 flex flex-col items-center w-40">
+    <Image src="/bethall.png" alt="Bethall Logo" width={200} height={200} className="mb-2" />
+  </div>
+
+  <div className="flex-1 flex flex-col gap-2">
+    <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#a8002fcc]">
+      100% BONUS POWITALNY + 200FS 
+    </div>
+    <div className="text-sm text-gray-100 mb-2">
+      <span className="font-bold">Największe plusy:</span> 100% bonus powitalny do 2250 PLN, 200FS + 1 Bonus Crab.
+    </div>
+  </div>
+
+  <div className="flex flex-col gap-2 w-40 relative">
+    <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
+    <button
+      className="bg-gradient-to-r from-[#a8002f] via-[#ff0033] to-[#800000] cursor-pointer hover:from-[#800000] hover:to-[#a8002f] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
+      type="button"
+      onClick={handleCopySpinbara}
+    >
+      {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
+    </button>
+
+    <a href="https://bhll.naralvin.com/?mid=344788_1991983" className="group" target="_blank">
+      <button className="bg-gradient-to-r from-[#a8002f] via-[#ff0033] to-[#800000] cursor-pointer hover:from-[#800000] hover:to-[#a8002f] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
+        Odbierz bonusy →
+      </button>
+    </a>
+  </div>
+</div>
+
   {/* Baner 5 – Allyspin */}
   <div className="w-full bg-gradient-to-br from-[#a8002f] via-[#ff0033] to-[#800000] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60">
     <div className="flex-shrink-0 flex flex-col items-center w-40">
