@@ -53,6 +53,7 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <head>
+        {/* Facebook Pixel */}
         <Script id="facebook-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
@@ -65,6 +66,13 @@ export default function RootLayout({
             'https://connect.facebook.net/en_US/fbevents.js');
             fbq('init', '805450812541053');
             fbq('track', 'PageView');
+          `}
+        </Script>
+
+        {/* Event ViewContent */}
+        <Script id="fb-viewcontent" strategy="afterInteractive">
+          {`
+            fbq('track', 'ViewContent');
           `}
         </Script>
       </head>
