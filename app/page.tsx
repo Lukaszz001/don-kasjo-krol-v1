@@ -50,6 +50,39 @@ export default function Home() {
 {/* PODMIENIONA SEKCJA BANEROWA */}
 <div className="w-full flex flex-col gap-8">
 
+   {/* Baner 2 – Dude (ciemniejszy żółty) */}
+  <div className="w-full bg-gradient-to-br from-[#b59f0b] via-[#facc15] to-[#fde68a] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#b59f0b]/60 relative">
+    <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
+      NEW
+    </div>
+    <div className="flex-shrink-0 flex flex-col items-center w-40">
+      <Image src="/dude.png" alt="Dude Logo" width={200} height={200} className="mb-2" />
+    </div>
+    <div className="flex-1 flex flex-col gap-2">
+      <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#b59f0bcc]">
+        BONUS POWITALNY 300% + 150FS
+      </div>
+      <div className="text-sm text-gray-100 mb-2">
+        <span className="font-bold">Największe plusy:</span> Bonus powitalny 300% do 9000 PLN + 150 Darmowych Spinów.
+      </div>
+    </div>
+    <div className="flex flex-col gap-2 w-40 relative">
+      <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
+      <button
+        className="bg-gradient-to-r from-[#b59f0b] via-[#facc15] to-[#fde68a] cursor-pointer hover:from-[#fde68a] hover:to-[#b59f0b] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#b59f0bcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
+        type="button"
+        onClick={handleCopySpinbara}
+      >
+        {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
+      </button>
+      <a href="https://dudsp.lynmonkel.com/?mid=343304_1984676" className="group" target="_blank">
+        <button className="bg-gradient-to-r from-[#b59f0b] via-[#facc15] to-[#fde68a] cursor-pointer hover:from-[#fde68a] hover:to-[#b59f0b] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#b59f0bcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
+          Odbierz bonusy →
+        </button>
+      </a>
+    </div>
+  </div>
+
   {/* Baner 1 – Alf (ciemniejszy fiolet) */}
   <div className="w-full bg-gradient-to-br from-[#4c1d95] via-[#5b21b6] to-[#6d28d9] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#4c1d95]/60 relative">
     <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
@@ -87,38 +120,7 @@ export default function Home() {
     </div>
   </div>
 
-  {/* Baner 2 – Dude (ciemniejszy żółty) */}
-  <div className="w-full bg-gradient-to-br from-[#b59f0b] via-[#facc15] to-[#fde68a] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#b59f0b]/60 relative">
-    <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
-      NEW
-    </div>
-    <div className="flex-shrink-0 flex flex-col items-center w-40">
-      <Image src="/dude.png" alt="Dude Logo" width={200} height={200} className="mb-2" />
-    </div>
-    <div className="flex-1 flex flex-col gap-2">
-      <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#b59f0bcc]">
-        BONUS POWITALNY 300% + 150FS
-      </div>
-      <div className="text-sm text-gray-100 mb-2">
-        <span className="font-bold">Największe plusy:</span> Bonus powitalny 300% do 9000 PLN + 150 Darmowych Spinów.
-      </div>
-    </div>
-    <div className="flex flex-col gap-2 w-40 relative">
-      <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
-      <button
-        className="bg-gradient-to-r from-[#b59f0b] via-[#facc15] to-[#fde68a] cursor-pointer hover:from-[#fde68a] hover:to-[#b59f0b] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#b59f0bcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
-        type="button"
-        onClick={handleCopySpinbara}
-      >
-        {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
-      </button>
-      <a href="https://dudsp.lynmonkel.com/?mid=343304_1984676" className="group" target="_blank">
-        <button className="bg-gradient-to-r from-[#b59f0b] via-[#facc15] to-[#fde68a] cursor-pointer hover:from-[#fde68a] hover:to-[#b59f0b] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#b59f0bcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
-          Odbierz bonusy →
-        </button>
-      </a>
-    </div>
-  </div>
+ 
 
 
 {/* Baner 3 – Legiano (zielony) */}
