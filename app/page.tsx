@@ -62,11 +62,11 @@ export default function Home() {
 
   <div className="flex-1 flex flex-col gap-2">
     <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#0ea5e9cc]">
-      150% BONUS POWITALNY + 50FS
+      100% BONUS POWITALNY + 50FS
     </div>
 
     <div className="text-sm text-gray-100 mb-2">
-      <span className="font-bold">Największe plusy:</span> Z kodem KASJO bonus powitalny aż 150% + 50 darmowych spinów na Le Bandit.
+      <span className="font-bold">Największe plusy:</span> Z kodem KASJO bonus powitalny 100% + 50 darmowych spinów na Le Bandit.
     </div>
   </div>
 
