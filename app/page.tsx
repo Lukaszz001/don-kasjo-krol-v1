@@ -81,7 +81,7 @@ export default function Home() {
       {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
     </button>
 
-    <a href="https://games-win.com/24699/29327?lp=00" className="group" target="_blank">
+    <a href="https://cheesecakemusic.com/24699/29327?lp=00" className="group" target="_blank">
       <button className="bg-gradient-to-r from-[#0ea5e9] via-[#38bdf8] to-[#7dd3fc] cursor-pointer hover:from-[#7dd3fc] hover:to-[#0ea5e9] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#0ea5e9cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
         Odbierz bonusy →
       </button>
