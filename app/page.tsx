@@ -199,24 +199,24 @@ export default function Home() {
     </div>
   </div>
 
- {/* Baner – Slotuna */}
-<div className="w-full bg-gradient-to-br from-[#a8002f] via-[#ff0033] to-[#800000] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60">
-  
-  {/* LOGO */}
-  <div className="flex-shrink-0 flex items-center justify-center w-40">
+{/* Baner – Slotuna (styl Legiano, czerwony) */}
+<div className="w-full bg-gradient-to-br from-[#a8002f] via-[#ff0033] to-[#800000] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60 relative">
+
+  {/* LOGO – bez kombinowania */}
+  <div className="flex-shrink-0 flex flex-col items-center w-40">
     <Image
       src="/slotuna.png"
       alt="Slotuna Logo"
-      width={260}
-      height={90}
-      className="object-contain"
+      width={200}
+      height={200}
+      className="mb-2"
       priority
     />
   </div>
 
   {/* TEKST */}
   <div className="flex-1 flex flex-col gap-2">
-    <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#a8002fcc]">
+    <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#ff0033cc]">
       100% BONUS POWITALNY + 200FS
     </div>
 
@@ -233,7 +233,7 @@ export default function Home() {
     </span>
 
     <button
-      className="bg-gradient-to-r from-[#a8002f] via-[#ff0033] to-[#800000] cursor-pointer hover:from-[#800000] hover:to-[#a8002f] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
+      className="bg-gradient-to-r from-[#a8002f] via-[#ff0033] to-[#800000] cursor-pointer hover:from-[#800000] hover:to-[#a8002f] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#ff0033cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
       type="button"
       onClick={handleCopy}
     >
@@ -246,12 +246,13 @@ export default function Home() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <button className="bg-gradient-to-r from-[#a8002f] via-[#ff0033] to-[#800000] cursor-pointer hover:from-[#800000] hover:to-[#a8002f] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
+      <button className="bg-gradient-to-r from-[#a8002f] via-[#ff0033] to-[#800000] cursor-pointer hover:from-[#800000] hover:to-[#a8002f] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#ff0033cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
         Odbierz bonusy →
       </button>
     </a>
   </div>
 </div>
+
 
   {/* Baner 4 – Spinbara */}
   <div className="w-full bg-gradient-to-br from-[#a8002f] via-[#ff0033] to-[#800000] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60 relative">
