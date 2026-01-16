@@ -66,7 +66,7 @@ export default function Home() {
     </div>
 
     <div className="text-sm text-gray-100 mb-2">
-      <span className="font-bold">Największe plusy:</span> Z kodem KASJO bonus powitalny 100% + 50 darmowych spinów na Le Bandit.
+      <span className="font-bold">Największe plusy:</span> Pakiet powitalny aż do 10 000 PLN + 225 darmowych spinów!
     </div>
   </div>
 
