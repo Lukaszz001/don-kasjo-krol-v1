@@ -199,18 +199,22 @@ export default function Home() {
     </div>
   </div>
 
-  {/* Baner – Slotuna */}
+ {/* Baner – Slotuna */}
 <div className="w-full bg-gradient-to-br from-[#a8002f] via-[#ff0033] to-[#800000] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60">
-  <div className="flex-shrink-0 flex flex-col items-center w-40">
+  
+  {/* LOGO */}
+  <div className="flex-shrink-0 flex items-center justify-center w-40">
     <Image
       src="/slotuna.png"
       alt="Slotuna Logo"
-      width={200}
-      height={200}
-      className="mb-2"
+      width={260}
+      height={90}
+      className="object-contain"
+      priority
     />
   </div>
 
+  {/* TEKST */}
   <div className="flex-1 flex flex-col gap-2">
     <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#a8002fcc]">
       100% BONUS POWITALNY + 200FS
@@ -222,6 +226,7 @@ export default function Home() {
     </div>
   </div>
 
+  {/* CTA */}
   <div className="flex flex-col gap-2 w-40 relative">
     <span className="text-xs text-gray-300 mb-1 text-center">
       Kliknij, aby skopiować.
