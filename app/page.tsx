@@ -200,7 +200,7 @@ export default function Home() {
   </div>
 
 {/* Baner – Slotuna (styl Spinbara) */}
-<div className="w-full bg-gradient-to-br from-[#a8002f] via-[#ff0033] to-[#800000] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60 relative">
+<div className="w-full bg-gradient-to-br from-[#ffb6c1] via-[#ff99c8] to-[#ff7fbf] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#ffb6c1]/60 relative">
 
   {/* LOGO */}
   <div className="flex-shrink-0 flex flex-col items-center w-40">
