@@ -228,7 +228,7 @@ export default function Home() {
   <div className="flex flex-col gap-2 w-40 relative">
     <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
     <button
-      className="bg-gradient-to-r from-[#a8002f] via-[#ff0033] to-[#800000] cursor-pointer hover:from-[#800000] hover:to-[#a8002f] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
+      className="bg-gradient-to-r from-[#ffb6c1] via-[#ff99c8] to-[#ff7fbf] cursor-pointer hover:from-[#ff7fbf] hover:to-[#ffb6c1] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#ff99c8cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
       type="button"
       onClick={handleCopy}
     >
@@ -241,12 +241,13 @@ export default function Home() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <button className="bg-gradient-to-r from-[#a8002f] via-[#ff0033] to-[#800000] cursor-pointer hover:from-[#800000] hover:to-[#a8002f] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
+      <button className="bg-gradient-to-r from-[#ffb6c1] via-[#ff99c8] to-[#ff7fbf] cursor-pointer hover:from-[#ff7fbf] hover:to-[#ffb6c1] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#ff99c8cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
         Odbierz bonusy →
       </button>
     </a>
   </div>
 </div>
+
 
 
   {/* Baner 4 – Spinbara */}
