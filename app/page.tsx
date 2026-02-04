@@ -164,42 +164,40 @@ export default function Home() {
   
 
   
- {/* Baner 3 – Legiano (zielony) */}
-  <div className="w-full bg-gradient-to-br from-[#065f46] via-[#10b981] to-[#34d399] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#065f46]/60 relative">
-    <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
-      TOP 1
+{/* Baner 3 – Legiano (zielony) */}
+<div className="w-full bg-gradient-to-br from-[#065f46] via-[#10b981] to-[#34d399] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#065f46]/60 relative">
+  <div className="flex-shrink-0 flex flex-col items-center w-40">
+    <Image src="/legiano.png" alt="Legiano Logo" width={200} height={200} className="mb-2" />
+  </div>
+  <div className="flex-1 flex flex-col gap-2">
+    <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#34d399cc]">
+      150% BONUS POWITALNY + 200FS
     </div>
-    <div className="flex-shrink-0 flex flex-col items-center w-40">
-      <Image src="/legiano.png" alt="Legiano Logo" width={200} height={200} className="mb-2" />
+    <div className="text-sm text-gray-100 mb-2">
+      <span className="font-bold">Największe plusy:</span> 150% bonusu do 2500 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK.
+      <br /><br />Z kodem KASJO 150% do pierwszej wpłaty!
     </div>
-    <div className="flex-1 flex flex-col gap-2">
-      <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#34d399cc]">
-        150% BONUS POWITALNY + 200FS
-      </div>
-      <div className="text-sm text-gray-100 mb-2">
-        <span className="font-bold">Największe plusy:</span> 150% bonusu do 2500 PLN, 100% bonusu do 450 PLN na Sport, Możliwość wpłaty BLIK.
-        <br /><br />Z kodem KASJO 150% do pierwszej wpłaty!
-      </div>
-      <div className="text-white font-bold text-sm mt-2 text-center">
-        Wypłacone w listopadzie: 270 000 PLN
-      </div>
-    </div>
-    <div className="flex flex-col gap-2 w-40 relative">
-      <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
-      <button
-        className="bg-gradient-to-r from-[#065f46] via-[#10b981] to-[#34d399] cursor-pointer hover:from-[#34d399] hover:to-[#065f46] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#34d399cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
-        type="button"
-        onClick={handleCopySpinbara}
-      >
-        {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
-      </button>
-      <a href="https://lgno.monvaki.com/?mid=267041_1574918" className="group" target="_blank">
-        <button className="bg-gradient-to-r from-[#065f46] via-[#10b981] to-[#34d399] cursor-pointer hover:from-[#34d399] hover:to-[#065f46] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#34d399cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
-          Odbierz bonusy →
-        </button>
-      </a>
+    <div className="text-white font-bold text-sm mt-2 text-center">
+      Wypłacone w listopadzie: 270 000 PLN
     </div>
   </div>
+  <div className="flex flex-col gap-2 w-40 relative">
+    <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
+    <button
+      className="bg-gradient-to-r from-[#065f46] via-[#10b981] to-[#34d399] cursor-pointer hover:from-[#34d399] hover:to-[#065f46] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#34d399cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
+      type="button"
+      onClick={handleCopySpinbara}
+    >
+      {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
+    </button>
+    <a href="https://lgno.monvaki.com/?mid=267041_1574918" className="group" target="_blank">
+      <button className="bg-gradient-to-r from-[#065f46] via-[#10b981] to-[#34d399] cursor-pointer hover:from-[#34d399] hover:to-[#065f46] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#34d399cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
+        Odbierz bonusy →
+      </button>
+    </a>
+  </div>
+</div>
+
 
   
   {/* Baner 1 – Alf (ciemniejszy fiolet) */}
