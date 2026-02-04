@@ -32,7 +32,7 @@ export default function Home() {
             </a>
             <span className="text-xs text-green-500 font-bold whitespace-nowrap ml-2 sm:ml-0">● LIVE</span>
           </div>
-          <span className="hidden md:inline bg-[#18181b] px-3 py-1 rounded text-xs border border-[#222] text-white/80">STREAMY CODZIENNIE O 20 NA KICKU</span>
+          <span className="hidden md:inline bg-[#18181b] px-3 py-1 rounded text-xs border border-[#222] text-white/80">STREAMY CODZIENNIE O 19 NA KICKU</span>
         </div>
       </header>
 
