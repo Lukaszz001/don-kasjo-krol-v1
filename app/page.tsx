@@ -50,59 +50,58 @@ export default function Home() {
 {/* PODMIENIONA SEKCJA BANEROWA */}
 <div className="w-full flex flex-col gap-8">
 
-{/* Baner – Wyns (złoty + neon bez CSS) */}
-<div className="w-full relative rounded-3xl overflow-hidden">
+{/* Baner – Wyns (złoty + neon FIX) */}
+<div className="w-full bg-gradient-to-br from-[#a16207] via-[#facc15] to-[#fde047] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-[0_0_45px_rgba(255,0,0,0.35)] border border-[#a16207]/60 relative">
+  
+  {/* Neon */}
+  <div className="absolute inset-2 rounded-3xl bg-red-600 opacity-40 blur-[100px] animate-pulse -z-10"></div>
 
-  {/* Neon w tle */}
-  <div className="absolute inset-0 flex justify-center items-center -z-10">
-    <div className="w-[130%] h-[160%] bg-red-600 opacity-40 blur-[100px] animate-pulse rounded-full"></div>
+  {/* TOP1 */}
+  <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
+    TOP 1
   </div>
 
-  <div className="w-full bg-gradient-to-br from-[#a16207] via-[#facc15] to-[#fde047] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-[0_0_45px_rgba(255,0,0,0.35)] border border-[#a16207]/60 relative">
-    
-    <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
-      TOP 1
+  {/* Logo */}
+  <div className="flex-shrink-0 flex flex-col items-center w-40">
+    <Image
+      src="/wyns.png"
+      alt="Wyns Logo"
+      width={200}
+      height={200}
+      className="mb-2 drop-shadow-[0_0_12px_#ff0000]"
+    />
+  </div>
+
+  {/* Content */}
+  <div className="flex-1 flex flex-col gap-2">
+    <div className="bg-[#18181b]/85 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white shadow-lg">
+      100% BONUS POWITALNY + 200FS
     </div>
 
-    <div className="flex-shrink-0 flex flex-col items-center w-40">
-      <Image
-        src="/wyns.png"
-        alt="Wyns Logo"
-        width={200}
-        height={200}
-        className="mb-2 drop-shadow-[0_0_12px_#ff0000]"
-      />
+    <div className="text-sm text-gray-900 mb-2 font-semibold">
+      <span className="font-bold">Największe plusy:</span> Bonus powitalny 100% aż do 2250 PLN + 200 darmowych spinów
     </div>
+  </div>
 
-    <div className="flex-1 flex flex-col gap-2">
-      <div className="bg-[#18181b]/85 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white shadow-lg">
-        100% BONUS POWITALNY + 200FS
-      </div>
+  {/* Buttons */}
+  <div className="flex flex-col gap-2 w-40 relative">
+    <span className="text-xs text-gray-800 mb-1 text-center">
+      Kliknij, aby skopiować.
+    </span>
 
-      <div className="text-sm text-gray-900 mb-2 font-semibold">
-        <span className="font-bold">Największe plusy:</span> Bonus powitalny 100% aż do 2250 PLN + 200 darmowych spinów
-      </div>
-    </div>
+    <button
+      className="bg-gradient-to-r from-[#a16207] via-[#facc15] to-[#fde047] cursor-pointer hover:from-[#fde047] hover:to-[#a16207] text-black rounded-full px-4 py-2 font-bold text-sm shadow-lg border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
+      type="button"
+      onClick={handleCopySpinbara}
+    >
+      {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
+    </button>
 
-    <div className="flex flex-col gap-2 w-40 relative">
-      <span className="text-xs text-gray-800 mb-1 text-center">
-        Kliknij, aby skopiować.
-      </span>
-
-      <button
-        className="bg-gradient-to-r from-[#a16207] via-[#facc15] to-[#fde047] cursor-pointer hover:from-[#fde047] hover:to-[#a16207] text-black rounded-full px-4 py-2 font-bold text-sm shadow-lg border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
-        type="button"
-        onClick={handleCopySpinbara}
-      >
-        {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
+    <a href="https://bit.ly/DonKasjoWyns" target="_blank">
+      <button className="bg-gradient-to-r from-[#a16207] via-[#facc15] to-[#fde047] cursor-pointer hover:from-[#fde047] hover:to-[#a16207] text-black rounded-full px-4 py-2 font-bold text-sm shadow-lg border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
+        Odbierz bonus →
       </button>
-
-      <a href="https://bit.ly/DonKasjoWyns" target="_blank">
-        <button className="bg-gradient-to-r from-[#a16207] via-[#facc15] to-[#fde047] cursor-pointer hover:from-[#fde047] hover:to-[#a16207] text-black rounded-full px-4 py-2 font-bold text-sm shadow-lg border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
-          Odbierz bonus →
-        </button>
-      </a>
-    </div>
+    </a>
   </div>
 </div>
 
