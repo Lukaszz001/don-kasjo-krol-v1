@@ -76,7 +76,7 @@ export default function Home() {
         type="button"
         onClick={() => {
           handleCopySpinbara();
-          window.gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'Wyns' });
+          (window as any).gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'Wyns' });
         }}
       >
         {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
@@ -84,7 +84,7 @@ export default function Home() {
       <a href="https://bit.ly/DonKasjoWyns" target="_blank" rel="noopener noreferrer">
         <button
           className="bg-gradient-to-r from-[#a16207] via-[#facc15] to-[#fde047] cursor-pointer hover:from-[#fde047] hover:to-[#a16207] text-black rounded-full px-4 py-2 font-bold text-sm shadow-lg border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full"
-          onClick={() => window.gtag?.('event', 'external_click', { link_url: 'https://bit.ly/DonKasjoWyns', banner: 'Wyns' })}
+          onClick={() => (window as any).gtag?.('event', 'external_click', { link_url: 'https://bit.ly/DonKasjoWyns', banner: 'Wyns' })}
         >
           Odbierz bonus →
         </button>
@@ -115,7 +115,7 @@ export default function Home() {
         type="button"
         onClick={() => {
           handleCopy();
-          window.gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'Slotuna' });
+          (window as any).gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'Slotuna' });
         }}
       >
         {copied ? "Skopiowano" : "KOD: KASJO"}
@@ -123,7 +123,7 @@ export default function Home() {
       <a href="https://sltna.pclira.com/?mid=349639_2019132" target="_blank" rel="noopener noreferrer">
         <button
           className="bg-gradient-to-r from-[#ffb6c1] via-[#ff99c8] to-[#ff7fbf] cursor-pointer hover:from-[#ff7fbf] hover:to-[#ffb6c1] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#ff99c8cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full"
-          onClick={() => window.gtag?.('event', 'external_click', { link_url: 'https://sltna.pclira.com/?mid=349639_2019132', banner: 'Slotuna' })}
+          onClick={() => (window as any).gtag?.('event', 'external_click', { link_url: 'https://sltna.pclira.com/?mid=349639_2019132', banner: 'Slotuna' })}
         >
           Odbierz bonusy →
         </button>
@@ -151,7 +151,7 @@ export default function Home() {
         type="button"
         onClick={() => {
           handleCopySpinbara();
-          window.gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'StoneVegas' });
+          (window as any).gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'StoneVegas' });
         }}
       >
         {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
@@ -159,7 +159,7 @@ export default function Home() {
       <a href="https://stnvgs.plfexa.com/?mid=351895_2045796" target="_blank" rel="noopener noreferrer">
         <button
           className="bg-gradient-to-r from-[#3b82f6] via-[#60a5fa] to-[#93c5fd] cursor-pointer hover:from-[#93c5fd] hover:to-[#3b82f6] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#60a5facc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full"
-          onClick={() => window.gtag?.('event', 'external_click', { link_url: 'https://stnvgs.plfexa.com/?mid=351895_2045796', banner: 'StoneVegas' })}
+          onClick={() => (window as any).gtag?.('event', 'external_click', { link_url: 'https://stnvgs.plfexa.com/?mid=351895_2045796', banner: 'StoneVegas' })}
         >
           Odbierz bonusy →
         </button>
@@ -187,7 +187,7 @@ export default function Home() {
         type="button"
         onClick={() => {
           handleCopySpinbara();
-          window.gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'SpinLine' });
+          (window as any).gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'SpinLine' });
         }}
       >
         {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
@@ -195,7 +195,7 @@ export default function Home() {
       <a href="https://spln.plfexa.com/?mid=351895_2045808" target="_blank" rel="noopener noreferrer">
         <button
           className="bg-gradient-to-r from-[#f97316] via-[#fb923c] to-[#fdba74] cursor-pointer hover:from-[#fdba74] hover:to-[#f97316] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#fb923ccc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full"
-          onClick={() => window.gtag?.('event', 'external_click', { link_url: 'https://spln.plfexa.com/?mid=351895_2045808', banner: 'SpinLine' })}
+          onClick={() => (window as any).gtag?.('event', 'external_click', { link_url: 'https://spln.plfexa.com/?mid=351895_2045808', banner: 'SpinLine' })}
         >
           Odbierz bonusy →
         </button>
@@ -227,7 +227,7 @@ export default function Home() {
         type="button"
         onClick={() => {
           handleCopySpinbara();
-          window.gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'Legiano' });
+          (window as any).gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'Legiano' });
         }}
       >
         {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
@@ -235,7 +235,7 @@ export default function Home() {
       <a href="https://lgno.monvaki.com/?mid=267041_1574918" target="_blank" rel="noopener noreferrer">
         <button
           className="bg-gradient-to-r from-[#065f46] via-[#10b981] to-[#34d399] cursor-pointer hover:from-[#34d399] hover:to-[#065f46] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#34d399cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full"
-          onClick={() => window.gtag?.('event', 'external_click', { link_url: 'https://lgno.monvaki.com/?mid=267041_1574918', banner: 'Legiano' })}
+          onClick={() => (window as any).gtag?.('event', 'external_click', { link_url: 'https://lgno.monvaki.com/?mid=267041_1574918', banner: 'Legiano' })}
         >
           Odbierz bonusy →
         </button>
@@ -272,7 +272,7 @@ export default function Home() {
       type="button"
       onClick={() => {
         handleCopySpinbara();
-        window.gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'Alf' });
+        (window as any).gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'Alf' });
       }}
     >
       {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
@@ -280,7 +280,7 @@ export default function Home() {
     <a href="https://alcw.monalvor.com/?mid=267041_1943815" className="group" target="_blank" rel="noopener noreferrer">
       <button
         className="bg-gradient-to-r from-[#4c1d95] via-[#5b21b6] to-[#6d28d9] cursor-pointer hover:from-[#6d28d9] hover:to-[#4c1d95] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#3b82f6cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full"
-        onClick={() => window.gtag?.('event', 'external_click', { link_url: 'https://alcw.monalvor.com/?mid=267041_1943815', banner: 'Alf' })}
+        onClick={() => (window as any).gtag?.('event', 'external_click', { link_url: 'https://alcw.monalvor.com/?mid=267041_1943815', banner: 'Alf' })}
       >
         Odbierz bonusy →
       </button>
@@ -309,7 +309,7 @@ export default function Home() {
       type="button"
       onClick={() => {
         handleCopySpinbara();
-        window.gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'Spinbara' });
+        (window as any).gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'Spinbara' });
       }}
     >
       {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
@@ -317,7 +317,7 @@ export default function Home() {
     <a href="https://spnbr.monvaki.com/?mid=267041_1760614" className="group" target="_blank" rel="noopener noreferrer">
       <button
         className="bg-gradient-to-r from-[#a8002f] via-[#ff0033] to-[#800000] cursor-pointer hover:from-[#800000] hover:to-[#a8002f] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full"
-        onClick={() => window.gtag?.('event', 'external_click', { link_url: 'https://spnbr.monvaki.com/?mid=267041_1760614', banner: 'Spinbara' })}
+        onClick={() => (window as any).gtag?.('event', 'external_click', { link_url: 'https://spnbr.monvaki.com/?mid=267041_1760614', banner: 'Spinbara' })}
       >
         Odbierz bonusy →
       </button>
@@ -346,7 +346,7 @@ export default function Home() {
       type="button"
       onClick={() => {
         handleCopy();
-        window.gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'Allyspin' });
+        (window as any).gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'Allyspin' });
       }}
     >
       {copied ? "Skopiowano" : "KOD: KASJO"}
@@ -354,7 +354,7 @@ export default function Home() {
     <a href="https://all.monvaki.com/?mid=267041_1570551" className="group" target="_blank" rel="noopener noreferrer">
       <button
         className="bg-gradient-to-r from-[#a8002f] via-[#ff0033] to-[#800000] cursor-pointer hover:from-[#800000] hover:to-[#a8002f] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#a8002fcc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full"
-        onClick={() => window.gtag?.('event', 'external_click', { link_url: 'https://all.monvaki.com/?mid=267041_1570551', banner: 'Allyspin' })}
+        onClick={() => (window as any).gtag?.('event', 'external_click', { link_url: 'https://all.monvaki.com/?mid=267041_1570551', banner: 'Allyspin' })}
       >
         Odbierz bonusy →
       </button>
