@@ -65,7 +65,7 @@ export default function Home() {
         100% BONUS POWITALNY + 200FS
       </div>
       <div className="text-sm text-gray-900 mb-2 font-semibold">
-        <span className="font-bold">Największe plusy:</span> Bonus powitalny 100% aż do 2250 PLN + 200 darmowych spinów
+        <span className="font-bold">Największe plusy:</span> Bonus powitalny 100% aż do 2250 PLN + 200 darmowych spinów!
       </div>
     </div>
 
