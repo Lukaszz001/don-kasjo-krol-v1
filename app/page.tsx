@@ -178,11 +178,11 @@ export default function Home() {
   {/* Content */}
   <div className="flex-1 flex flex-col gap-2">
     <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#60a5facc]">
-      100% BONUS POWITALNY + 200FS
+      120% BONUS POWITALNY + 250FS
     </div>
 
     <div className="text-sm text-gray-100 mb-2 font-semibold">
-      <span className="font-bold">Największe plusy:</span> Bonus powitalny 100% aż do 2250 PLN + 200 darmowych spinów
+      <span className="font-bold">Największe plusy:</span> Bonus powitalny 120% aż do 2200 PLN + 250 darmowych spinów
     </div>
   </div>
 
@@ -225,12 +225,12 @@ export default function Home() {
   {/* Content */}
   <div className="flex-1 flex flex-col gap-2">
     <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#fb923ccc]">
-      120% BONUS POWITALNY + 250FS
+      120% BONUS POWITALNY + 200FS
     </div>
 
     <div className="text-sm text-gray-100 mb-2 font-semibold">
       <span className="font-bold">Największe plusy:</span>{" "}
-      Bonus 120% od 2200 PLN + 250 darmowych spinów, oraz rozbudowany pakiet powitalny aż do 6600 PLN!
+      Bonus 120% od 1450 PLN + 250 darmowych spinów, oraz rozbudowany pakiet powitalny aż do 6600 PLN!
     </div>
   </div>
 
