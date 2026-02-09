@@ -200,7 +200,7 @@ export default function Home() {
       {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
     </button>
 
-    <a href="https://stnvgs.plfexa.com/?mid=351895_2027973" target="_blank">
+    <a href="https://stnvgs.plfexa.com/?mid=351895_2045796" target="_blank">
       <button className="bg-gradient-to-r from-[#3b82f6] via-[#60a5fa] to-[#93c5fd] cursor-pointer hover:from-[#93c5fd] hover:to-[#3b82f6] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#60a5facc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
         Odbierz bonusy →
       </button>
@@ -225,12 +225,12 @@ export default function Home() {
   {/* Content */}
   <div className="flex-1 flex flex-col gap-2">
     <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#fb923ccc]">
-      120% BONUS POWITALNY + 200FS
+      120% BONUS POWITALNY + 250FS
     </div>
 
     <div className="text-sm text-gray-100 mb-2 font-semibold">
       <span className="font-bold">Największe plusy:</span>{" "}
-      Bonus 120% od 1450 PLN + 200 darmowych spinów, oraz rozbudowany pakiet powitalny aż do 6600 PLN!
+      Bonus 120% od 2200 PLN + 250 darmowych spinów, oraz rozbudowany pakiet powitalny aż do 6600 PLN!
     </div>
   </div>
 
