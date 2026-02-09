@@ -443,7 +443,7 @@ export default function Home() {
   <div className="flex-1 flex flex-col items-center text-center gap-2">
     <Image src="/instagram-icon.png" alt="Kanał Nadawczy" width={40} height={40} />
     <span className="text-gray-800 font-extrabold text-lg">Kanał Nadawczy</span>
-    <a href="https://www.instagram.com/kingdonkasjo/" target="_blank" className="mt-2">
+    <a href="https://www.instagram.com/donkasjo/" target="_blank" className="mt-2">
       <button className="bg-[#4b0082] text-white font-bold px-4 py-2 rounded-full shadow hover:scale-105 transition-transform">
         Dołącz
       </button>
@@ -497,7 +497,7 @@ export default function Home() {
       <Image src="/kick-logo.svg" alt="Kick" width={20} height={20} className="w-5 h-5" />
     </a>
     <a
-      href="https://www.instagram.com/kingdonkasjo/"
+      href="https://www.instagram.com/donkasjo/"
       target="_blank"
       rel="noopener noreferrer"
       className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-gradient-to-tr from-[#a8002f] to-[#ff0055] hover:opacity-80 transition cursor-pointer"
