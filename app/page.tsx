@@ -208,6 +208,53 @@ export default function Home() {
   </div>
 </div>
 
+{/* Baner – SpinLine (pomarańczowy) */}
+<div className="w-full bg-gradient-to-br from-[#f97316] via-[#fb923c] to-[#fdba74] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#f97316]/60 relative">
+  
+  {/* Logo */}
+  <div className="flex-shrink-0 flex flex-col items-center w-40">
+    <Image
+      src="/spinline.png"
+      alt="SpinLine Logo"
+      width={200}
+      height={200}
+      className="mb-2"
+    />
+  </div>
+
+  {/* Content */}
+  <div className="flex-1 flex flex-col gap-2">
+    <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#fb923ccc]">
+      120% BONUS POWITALNY + 200FS
+    </div>
+
+    <div className="text-sm text-gray-100 mb-2 font-semibold">
+      <span className="font-bold">Największe plusy:</span>{" "}
+      Bonus 120% od 1450 PLN + 200 darmowych spinów, oraz rozbudowany pakiet powitalny aż do 6600 PLN!
+    </div>
+  </div>
+
+  {/* Buttons */}
+  <div className="flex flex-col gap-2 w-40 relative">
+    <span className="text-xs text-gray-300 mb-1 text-center">
+      Kliknij, aby skopiować.
+    </span>
+
+    <button
+      className="bg-gradient-to-r from-[#f97316] via-[#fb923c] to-[#fdba74] cursor-pointer hover:from-[#fdba74] hover:to-[#f97316] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#fb923ccc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
+      type="button"
+      onClick={handleCopySpinbara}
+    >
+      {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
+    </button>
+
+    <a href="https://spln.plfexa.com/?mid=351895_2045808" target="_blank">
+      <button className="bg-gradient-to-r from-[#f97316] via-[#fb923c] to-[#fdba74] cursor-pointer hover:from-[#fdba74] hover:to-[#f97316] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#fb923ccc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full">
+        Odbierz bonusy →
+      </button>
+    </a>
+  </div>
+</div>
 
   
 {/* Baner 3 – Legiano (zielony) */}
