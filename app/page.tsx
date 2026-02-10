@@ -102,7 +102,7 @@ export default function Home() {
       100% BONUS POWITALNY + 150FS
     </div>
     <div className="text-sm text-gray-100 mb-2">
-      <span className="font-bold">Największe plusy:</span> Bonus powitalny 100% do 1275 PLN, Pakiet powitalny do 6300 PLN, 150 darmowych spinów.
+      <span className="font-bold">Największe plusy:</span> Bonus powitalny 100% do 1275 PLN, pakiet powitalny do aż 6300 PLN!
       <br /><br />Z kodem KASJO 100% do pierwszej wpłaty!
     </div>
   </div>
