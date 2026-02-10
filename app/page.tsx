@@ -92,6 +92,44 @@ export default function Home() {
     </div>
   </div>
 
+  {/* Baner 4 – Spinbetter */}
+<div className="w-full bg-gradient-to-br from-[#5B2C6F] via-[#7D3C98] to-[#4A235A] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#7D3C98]/60 relative">
+  <div className="flex-shrink-0 flex flex-col items-center w-40">
+    <Image src="/spinbetter.png" alt="Spinbetter Logo" width={200} height={200} className="mb-2" />
+  </div>
+  <div className="flex-1 flex flex-col gap-2">
+    <div className="bg-[#1E0F2E]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#7D3C98cc]">
+      100% BONUS POWITALNY + 150FS
+    </div>
+    <div className="text-sm text-gray-100 mb-2">
+      <span className="font-bold">Największe plusy:</span> Bonus powitalny 100% do 1275 PLN, Pakiet powitalny do 6300 PLN, 150 darmowych spinów.
+      <br /><br />Z kodem KASJO 100% do pierwszej wpłaty!
+    </div>
+  </div>
+  <div className="flex flex-col gap-2 w-40 relative">
+    <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
+    <button
+      className="bg-gradient-to-r from-[#5B2C6F] via-[#7D3C98] to-[#4A235A] cursor-pointer hover:from-[#4A235A] hover:to-[#5B2C6F] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#7D3C98cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
+      type="button"
+      onClick={() => {
+        handleCopySpinbara();
+        (window as any).gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'Spinbetter' });
+      }}
+    >
+      {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
+    </button>
+    <a href="https://redirspinner.com/2u7A?p=%2Fregistration%2F" className="group" target="_blank" rel="noopener noreferrer">
+      <button
+        className="bg-gradient-to-r from-[#5B2C6F] via-[#7D3C98] to-[#4A235A] cursor-pointer hover:from-[#4A235A] hover:to-[#5B2C6F] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#7D3C98cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full"
+        onClick={() => (window as any).gtag?.('event', 'external_click', { link_url: 'https://redirspinner.com/2u7A?p=%2Fregistration%2F', banner: 'Spinbetter' })}
+      >
+        Odbierz bonusy →
+      </button>
+    </a>
+  </div>
+</div>
+
+
   {/* Baner – Slotuna */}
   <div className="w-full bg-gradient-to-br from-[#ffb6c1] via-[#ff99c8] to-[#ff7fbf] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#ffb6c1]/60 relative">
     <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
@@ -288,7 +326,7 @@ export default function Home() {
   </div>
 </div>
 
-{/* Baner 4 – Spinbara */}
+{/* Baner 4 – Spinbara (czerwony jak Allyspin) */}
 <div className="w-full bg-gradient-to-br from-[#a8002f] via-[#ff0033] to-[#800000] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#a8002f]/60 relative">
   <div className="flex-shrink-0 flex flex-col items-center w-40">
     <Image src="/spinbara.png" alt="Spinbara Logo" width={200} height={200} className="mb-2" />
