@@ -50,47 +50,7 @@ export default function Home() {
 {/* PODMIENIONA SEKCJA BANEROWA */}
 <div className="w-full flex flex-col gap-8">
 
-  {/* Baner – Wyns */}
-  <div className="w-full bg-gradient-to-br from-[#a16207] via-[#facc15] to-[#fde047] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-[0_0_45px_rgba(255,0,0,0.35)] border border-[#a16207]/60 relative">
-    <div className="absolute inset-2 rounded-3xl bg-red-600 opacity-40 blur-[100px] animate-pulse -z-10"></div>
-    <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
-      TOP 1
-    </div>
-    <div className="flex-shrink-0 flex flex-col items-center w-40">
-      <Image src="/wyns.png" alt="Wyns Logo" width={200} height={200} className="mb-2 drop-shadow-[0_0_12px_#ff0000]" />
-    </div>
-
-    <div className="flex-1 flex flex-col gap-2">
-      <div className="bg-[#18181b]/85 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white shadow-lg">
-        100% BONUS POWITALNY + 200FS
-      </div>
-      <div className="text-sm text-gray-900 mb-2 font-semibold">
-        <span className="font-bold">Największe plusy:</span> Bonus powitalny 100% aż do 2250 PLN + 200 darmowych spinów!
-      </div>
-    </div>
-
-    <div className="flex flex-col gap-2 w-40 relative">
-      <span className="text-xs text-gray-800 mb-1 text-center">Kliknij, aby skopiować.</span>
-      <button
-        className="bg-gradient-to-r from-[#a16207] via-[#facc15] to-[#fde047] cursor-pointer hover:from-[#fde047] hover:to-[#a16207] text-black rounded-full px-4 py-2 font-bold text-sm shadow-lg border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
-        type="button"
-        onClick={() => {
-          handleCopySpinbara();
-          (window as any).gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'Wyns' });
-        }}
-      >
-        {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
-      </button>
-      <a href="https://bit.ly/DonKasjoWyns" target="_blank" rel="noopener noreferrer">
-        <button
-          className="bg-gradient-to-r from-[#a16207] via-[#facc15] to-[#fde047] cursor-pointer hover:from-[#fde047] hover:to-[#a16207] text-black rounded-full px-4 py-2 font-bold text-sm shadow-lg border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full"
-          onClick={() => (window as any).gtag?.('event', 'external_click', { link_url: 'https://bit.ly/DonKasjoWyns', banner: 'Wyns' })}
-        >
-          Odbierz bonus →
-        </button>
-      </a>
-    </div>
-  </div>
+  
 
   {/* Baner 4 – Spinbetter */}
 <div className="w-full bg-gradient-to-br from-[#5B2C6F] via-[#7D3C98] to-[#4A235A] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#7D3C98]/60 relative">
