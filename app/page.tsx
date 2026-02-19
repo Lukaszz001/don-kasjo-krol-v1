@@ -134,7 +134,7 @@ export default function Home() {
   
   <div className="flex-shrink-0 flex flex-col items-center w-40">
     <Image
-      src="/punter.png"
+      src="/punter2.png"
       alt="Punter Logo"
       width={200}
       height={200}
