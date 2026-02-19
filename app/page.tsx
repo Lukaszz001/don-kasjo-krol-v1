@@ -136,7 +136,7 @@ export default function Home() {
 >
   <div className="bg-[#1E120C]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
     <img
-      src="/punter.png"
+      src="/punter2.png"
       alt="Punter"
       className="w-[130px] md:w-[150px] h-auto object-contain"
     />
