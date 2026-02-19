@@ -130,11 +130,11 @@ export default function Home() {
   </div>
 
   {/* Baner – Punter */}
-<div className="w-full bg-gradient-to-br from-[#5B2C6F] via-[#7D3C98] to-[#4A235A] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#7D3C98]/60 relative">
+<div className="w-full bg-gradient-to-br from-[#4B2E1E] via-[#6B3E26] to-[#2E1A12] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#6B3E26]/60 relative">
   
   <div className="flex-shrink-0 flex flex-col items-center w-40">
     <Image
-      src="/punter2.png"
+      src="/punter.png"
       alt="Punter Logo"
       width={200}
       height={200}
@@ -143,7 +143,7 @@ export default function Home() {
   </div>
 
   <div className="flex-1 flex flex-col gap-2">
-    <div className="bg-[#1E0F2E]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#7D3C98cc]">
+    <div className="bg-[#1E120C]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#6B3E26cc]">
       100% BONUS POWITALNY + 200 FS
     </div>
 
@@ -160,7 +160,7 @@ export default function Home() {
       rel="noopener noreferrer"
     >
       <button
-        className="bg-gradient-to-r from-[#5B2C6F] via-[#7D3C98] to-[#4A235A] cursor-pointer hover:from-[#4A235A] hover:to-[#5B2C6F] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#7D3C98cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 w-full"
+        className="bg-gradient-to-r from-[#4B2E1E] via-[#6B3E26] to-[#2E1A12] cursor-pointer hover:from-[#2E1A12] hover:to-[#4B2E1E] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#6B3E26cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 w-full"
         onClick={() =>
           (window as any).gtag?.("event", "external_click", {
             link_url: "https://mrp.naralvin.com/?mid=357160_2060521",
