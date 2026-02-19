@@ -129,6 +129,50 @@ export default function Home() {
     </div>
   </div>
 
+  {/* Punter - Brown Style */}
+
+<div
+  className="w-full max-w-6xl mx-auto bg-gradient-to-br from-[#4B2E1E] to-[#2B1A12] border border-[#D2A679]/20 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(210,166,121,0.25)] hover:-translate-y-1"
+>
+  <div className="bg-[#1E120C]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
+    <img
+      src="/punter.png"
+      alt="Punter"
+      className="w-[130px] md:w-[150px] h-auto object-contain"
+    />
+  </div>
+
+  <div className="flex-1 text-center md:text-left">
+    <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap text-[#F5E6D3]">
+      100% BONUS POWITALNY + 200 FS
+    </h3>
+
+    <p className="text-sm md:text-base text-[#EAD8C0] font-medium">
+      Największe plusy: Bonus powitalny 100% aż do 2250 PLN + 200 darmowych spinów!
+    </p>
+  </div>
+
+  <div className="w-full md:w-auto flex flex-col gap-2">
+    <a
+      href="https://mrp.naralvin.com/?mid=357160_2060521"
+      target="_blank"
+      rel="noopener noreferrer"
+      onClick={() =>
+        (window as any).gtag?.("event", "external_click", {
+          link_url: "https://mrp.naralvin.com/?mid=357160_2060521",
+          banner: "Punter",
+        })
+      }
+      className="block bg-[#D2A679] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(210,166,121,0.45)] hover:-translate-y-0.5"
+    >
+      Odbierz bonus
+    </a>
+  </div>
+</div>
+
+<div className="h-10" />
+
+
   {/* Baner – StoneVegas */}
   <div className="w-full bg-gradient-to-br from-[#3b82f6] via-[#60a5fa] to-[#93c5fd] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#3b82f6]/60 relative">
     <div className="flex-shrink-0 flex flex-col items-center w-40">
