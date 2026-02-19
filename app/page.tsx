@@ -129,48 +129,51 @@ export default function Home() {
     </div>
   </div>
 
-  {/* Punter - Brown Style */}
-
-<div
-  className="w-full max-w-6xl mx-auto bg-gradient-to-br from-[#4B2E1E] to-[#2B1A12] border border-[#D2A679]/20 rounded-2xl flex flex-col md:flex-row items-center gap-6 p-5 md:p-6 transition-all duration-300 hover:shadow-[0_0_25px_rgba(210,166,121,0.25)] hover:-translate-y-1"
->
-  <div className="bg-[#1E120C]/80 backdrop-blur-sm p-4 rounded-xl flex-shrink-0">
-    <img
+  {/* Baner – Punter */}
+<div className="w-full bg-gradient-to-br from-[#5B2C6F] via-[#7D3C98] to-[#4A235A] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#7D3C98]/60 relative">
+  
+  <div className="flex-shrink-0 flex flex-col items-center w-40">
+    <Image
       src="/punter2.png"
-      alt="Punter"
-      className="w-[130px] md:w-[150px] h-auto object-contain"
+      alt="Punter Logo"
+      width={200}
+      height={200}
+      className="mb-2"
     />
   </div>
 
-  <div className="flex-1 text-center md:text-left">
-    <h3 className="text-base md:text-lg font-bold mb-3 whitespace-nowrap text-[#F5E6D3]">
+  <div className="flex-1 flex flex-col gap-2">
+    <div className="bg-[#1E0F2E]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#7D3C98cc]">
       100% BONUS POWITALNY + 200 FS
-    </h3>
+    </div>
 
-    <p className="text-sm md:text-base text-[#EAD8C0] font-medium">
-      Największe plusy: Bonus powitalny 100% aż do 2250 PLN + 200 darmowych spinów!
-    </p>
+    <div className="text-sm text-gray-100 mb-2">
+      <span className="font-bold">Największe plusy:</span> Bonus powitalny 100% aż do 2250 PLN + 200 darmowych spinów!
+    </div>
   </div>
 
-  <div className="w-full md:w-auto flex flex-col gap-2">
+  <div className="flex flex-col gap-2 w-40 relative">
     <a
       href="https://mrp.naralvin.com/?mid=357160_2060521"
+      className="group"
       target="_blank"
       rel="noopener noreferrer"
-      onClick={() =>
-        (window as any).gtag?.("event", "external_click", {
-          link_url: "https://mrp.naralvin.com/?mid=357160_2060521",
-          banner: "Punter",
-        })
-      }
-      className="block bg-[#D2A679] text-black font-bold px-8 py-3 rounded-lg text-center transition hover:shadow-[0_0_25px_rgba(210,166,121,0.45)] hover:-translate-y-0.5"
     >
-      Odbierz bonus
+      <button
+        className="bg-gradient-to-r from-[#5B2C6F] via-[#7D3C98] to-[#4A235A] cursor-pointer hover:from-[#4A235A] hover:to-[#5B2C6F] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#7D3C98cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 w-full"
+        onClick={() =>
+          (window as any).gtag?.("event", "external_click", {
+            link_url: "https://mrp.naralvin.com/?mid=357160_2060521",
+            banner: "Punter",
+          })
+        }
+      >
+        Odbierz bonusy →
+      </button>
     </a>
   </div>
 </div>
 
-<div className="h-10" />
 
 
   {/* Baner – StoneVegas */}
