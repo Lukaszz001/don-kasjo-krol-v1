@@ -50,7 +50,60 @@ export default function Home() {
 {/* PODMIENIONA SEKCJA BANEROWA */}
 <div className="w-full flex flex-col gap-8">
 
-  
+  {/* Baner – LuckyFruits */}
+<div className="w-full bg-gradient-to-br from-[#0B3D2E] via-[#0F5132] to-[#07251D] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#22FF88]/20 relative">
+
+  {/* Naklejka TOP1 */}
+  <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#22FF88] to-[#16a34a] text-black text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
+    TOP1
+  </div>
+
+  {/* Logo */}
+  <div className="flex-shrink-0 flex flex-col items-center w-40">
+    <Image
+      src="/fruits.png"
+      alt="LuckyFruits Logo"
+      width={200}
+      height={200}
+      className="mb-2"
+      priority
+    />
+  </div>
+
+  {/* Treść */}
+  <div className="flex-1 flex flex-col gap-2">
+    <div className="bg-[#041A14]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_6px_rgba(34,255,136,0.4)]">
+      100% BONUS POWITALNY + 100FS
+    </div>
+
+    <div className="text-sm text-gray-100 mb-2">
+      <span className="font-bold">Największe plusy:</span> 
+      Bonus powitalny 100% do 1500 PLN, 200 darmowych spinów. 
+      Pakiet powitalny aż do 4000 PLN!
+    </div>
+  </div>
+
+  {/* CTA */}
+  <div className="flex flex-col gap-2 w-40 relative">
+    <a
+      href="https://affitrck2.com/C.ashx?btag=a_386b_11c_&affid=183&siteid=386&adid=11&c="
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button
+        className="bg-gradient-to-r from-[#22FF88] to-[#16a34a] cursor-pointer hover:from-[#16a34a] hover:to-[#22FF88] text-black rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_6px_rgba(34,255,136,0.5)] border border-white border-opacity-40 transition-all duration-300 w-full"
+        onClick={() =>
+          (window as any).gtag?.("event", "external_click", {
+            link_url: "https://affitrck2.com/C.ashx?btag=a_386b_11c_&affid=183&siteid=386&adid=11&c=",
+            banner: "LuckyFruits",
+          })
+        }
+      >
+        Odbierz bonusy →
+      </button>
+    </a>
+  </div>
+</div>
 
   {/* Baner 4 – Spinbetter */}
 <div className="w-full bg-gradient-to-br from-[#5B2C6F] via-[#7D3C98] to-[#4A235A] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#7D3C98]/60 relative">
