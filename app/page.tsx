@@ -124,16 +124,28 @@ export default function Home() {
       className="bg-gradient-to-r from-[#5B2C6F] via-[#7D3C98] to-[#4A235A] cursor-pointer hover:from-[#4A235A] hover:to-[#5B2C6F] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#7D3C98cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
       type="button"
       onClick={() => {
-        handleCopyDude();
+        handleCopySpinbara();
         (window as any).gtag?.('event', 'copy_code', { code: 'DUDE', banner: 'Dude' });
       }}
     >
-      {copiedDude ? "Skopiowano" : "KOD: DUDE"}
+      {copiedSpinbara ? "Skopiowano" : "KOD: DUDE"}
     </button>
-    <a href="https://dudsp.lynmonkel.com/?mid=343304_1984676" className="group" target="_blank" rel="noopener noreferrer">
+
+    <a
+      href="https://dudsp.lynmonkel.com/?mid=343304_1984676"
+      className="group"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <button
+        type="button"
         className="bg-gradient-to-r from-[#5B2C6F] via-[#7D3C98] to-[#4A235A] cursor-pointer hover:from-[#4A235A] hover:to-[#5B2C6F] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#7D3C98cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full"
-        onClick={() => (window as any).gtag?.('event', 'external_click', { link_url: 'https://dudsp.lynmonkel.com/?mid=343304_1984676', banner: 'Dude' })}
+        onClick={() =>
+          (window as any).gtag?.('event', 'external_click', {
+            link_url: 'https://dudsp.lynmonkel.com/?mid=343304_1984676',
+            banner: 'Dude',
+          })
+        }
       >
         Odbierz bonusy →
       </button>
@@ -141,6 +153,7 @@ export default function Home() {
   </div>
 </div>
 
+  
   {/* Baner – Slotuna */}
   <div className="w-full bg-gradient-to-br from-[#ffb6c1] via-[#ff99c8] to-[#ff7fbf] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#ffb6c1]/60 relative">
     <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
