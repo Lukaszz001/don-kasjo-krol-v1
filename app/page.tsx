@@ -79,7 +79,7 @@ export default function Home() {
     </button>
 
     <a
-      href="https://dudsp.lynmonkel.com/?mid=343304_1984676"
+      href="https://ddspn.lynmonkel.com/?mid=353195_2038029"
       className="group"
       target="_blank"
       rel="noopener noreferrer"
