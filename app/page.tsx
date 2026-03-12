@@ -213,7 +213,7 @@ export default function Home() {
   <div className="flex-1 flex flex-col items-center text-center gap-2">
     <Image src="/telegram-icon.png" alt="Telegram" width={40} height={40} />
     <span className="text-gray-800 font-extrabold text-lg">Telegram</span>
-    <a href="https://t.me/+pIH5hbyqgUI2NzA8" target="_blank" className="mt-2">
+    <a href="https://t.me/+I8K0pYk488wyYjE8" target="_blank" className="mt-2">
       <button className="bg-[#4b0082] text-white font-bold px-4 py-2 rounded-full shadow hover:scale-105 transition-transform">
         Dołącz
       </button>
