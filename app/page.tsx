@@ -55,7 +55,7 @@ export default function Home() {
   
   
 {/* Baner – Slotuna */}
-<div className="w-full bg-gradient-to-br from-[#ffb6c1] via-[#ff99c8] to-[#ff7fbf] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#ffb6c1]/60 relative">
+<div className="w-full bg-gradient-to-br from-[#facc15] via-[#eab308] to-[#a16207] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#facc15]/60 relative">
 
   <div className="flex-shrink-0 flex flex-col items-center w-40">
     <Image
@@ -69,7 +69,7 @@ export default function Home() {
   </div>
 
   <div className="flex-1 flex flex-col gap-2">
-    <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#a8002fcc]">
+    <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#eab308cc]">
       100% BONUS POWITALNY + 200FS
     </div>
 
@@ -84,7 +84,7 @@ export default function Home() {
     </span>
 
     <button
-      className="bg-gradient-to-r from-[#ffb6c1] via-[#ff99c8] to-[#ff7fbf] cursor-pointer hover:from-[#ff7fbf] hover:to-[#ffb6c1] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#ff99c8cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
+      className="bg-gradient-to-r from-[#facc15] via-[#eab308] to-[#a16207] cursor-pointer hover:from-[#a16207] hover:to-[#facc15] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#eab308cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
       type="button"
       onClick={() => {
         handleCopy();
@@ -100,7 +100,7 @@ export default function Home() {
       rel="noopener noreferrer"
     >
       <button
-        className="bg-gradient-to-r from-[#ffb6c1] via-[#ff99c8] to-[#ff7fbf] cursor-pointer hover:from-[#ff7fbf] hover:to-[#ffb6c1] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#ff99c8cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full"
+        className="bg-gradient-to-r from-[#facc15] via-[#eab308] to-[#a16207] cursor-pointer hover:from-[#a16207] hover:to-[#facc15] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#eab308cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full"
         onClick={() =>
           (window as any).gtag?.("event", "external_click", {
             link_url: "https://sltna.pclira.com/?mid=349639_2019132",
