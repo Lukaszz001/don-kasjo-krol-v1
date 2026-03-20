@@ -74,7 +74,7 @@ export default function Home() {
     </div>
 
     <div className="text-sm text-gray-100 mb-2">
-      <span className="font-bold">Największe plusy:</span> Bonus powitalny 100% do 1000 PLN, 100 darmowych spinów. Możliwość płatności BLIK!
+      <span className="font-bold">Największe plusy:</span> Bonus powitalny 100% do 1000 PLN, 100 darmowych spinów. Możliwość płatności BLIK i szybka realizacja wypłat!
     </div>
   </div>
 
