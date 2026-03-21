@@ -51,54 +51,7 @@ export default function Home() {
 <div className="w-full flex flex-col gap-8">
 
   
-{/* Baner – Kodabet */}
-<div className="w-full bg-gradient-to-br from-[#0A1F44] via-[#1E4ED8] to-[#050E24] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#1E4ED8]/60 relative">
 
-  <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
-    NEW
-  </div>
-
-  <div className="flex-shrink-0 flex flex-col items-center w-40">
-    <Image
-      src="/kodabet.png"
-      alt="Kodabet Logo"
-      width={200}
-      height={200}
-      className="mb-2"
-    />
-  </div>
-
-  <div className="flex-1 flex flex-col gap-2">
-    <div className="bg-[#020817]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#1E4ED8cc]">
-      100% BONUS POWITALNY + 100FS
-    </div>
-
-    <div className="text-sm text-gray-100 mb-2">
-      <span className="font-bold">Największe plusy:</span> Bonus powitalny 100% do 1000 PLN, 100 darmowych spinów. Możliwość płatności BLIK i szybka realizacja wypłat!
-    </div>
-  </div>
-
-  <div className="flex flex-col gap-2 w-40 relative">
-    <a
-      href="https://afftrk.karhubet.com/C.ashx?btag=a_20726b_972c_&affid=5048&siteid=20726&adid=972&c="
-      className="group"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <button
-        className="bg-gradient-to-r from-[#0A1F44] via-[#1E4ED8] to-[#050E24] cursor-pointer hover:from-[#050E24] hover:to-[#0A1F44] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#1E4ED8cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 w-full"
-        onClick={() =>
-          (window as any).gtag?.("event", "external_click", {
-            link_url: "https://afftrk.karhubet.com/C.ashx?btag=a_20726b_972c_&affid=5048&siteid=20726&adid=972&c=",
-            banner: "Kodabet",
-          })
-        }
-      >
-        Odbierz bonusy →
-      </button>
-    </a>
-  </div>
-</div>
   
   
 {/* Baner – Slotuna */}
@@ -354,7 +307,54 @@ export default function Home() {
 </div>
 
 
+{/* Baner – Kodabet */}
+<div className="w-full bg-gradient-to-br from-[#0A1F44] via-[#1E4ED8] to-[#050E24] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#1E4ED8]/60 relative">
 
+  <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
+    NEW
+  </div>
+
+  <div className="flex-shrink-0 flex flex-col items-center w-40">
+    <Image
+      src="/kodabet.png"
+      alt="Kodabet Logo"
+      width={200}
+      height={200}
+      className="mb-2"
+    />
+  </div>
+
+  <div className="flex-1 flex flex-col gap-2">
+    <div className="bg-[#020817]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#1E4ED8cc]">
+      100% BONUS POWITALNY + 100FS
+    </div>
+
+    <div className="text-sm text-gray-100 mb-2">
+      <span className="font-bold">Największe plusy:</span> Bonus powitalny 100% do 1000 PLN, 100 darmowych spinów. Możliwość płatności BLIK i szybka realizacja wypłat!
+    </div>
+  </div>
+
+  <div className="flex flex-col gap-2 w-40 relative">
+    <a
+      href="https://afftrk.karhubet.com/C.ashx?btag=a_20726b_972c_&affid=5048&siteid=20726&adid=972&c="
+      className="group"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button
+        className="bg-gradient-to-r from-[#0A1F44] via-[#1E4ED8] to-[#050E24] cursor-pointer hover:from-[#050E24] hover:to-[#0A1F44] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#1E4ED8cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 w-full"
+        onClick={() =>
+          (window as any).gtag?.("event", "external_click", {
+            link_url: "https://afftrk.karhubet.com/C.ashx?btag=a_20726b_972c_&affid=5048&siteid=20726&adid=972&c=",
+            banner: "Kodabet",
+          })
+        }
+      >
+        Odbierz bonusy →
+      </button>
+    </a>
+  </div>
+</div>
  
 
 
