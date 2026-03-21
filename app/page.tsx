@@ -57,6 +57,20 @@ export default function Home() {
 {/* Baner – Slotuna */}
 <div className="w-full bg-gradient-to-br from-[#facc15] via-[#eab308] to-[#a16207] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#facc15]/60 relative">
 
+  {/* 👑 TOP 1 BADGE (LUX VERSION) */}
+  <div className="absolute -top-4 -right-4 z-20">
+    <div
+      className="flex items-center gap-2 px-4 py-2 rounded-full
+      bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500
+      text-black text-sm md:text-base font-extrabold
+      
+      border-2 border-yellow-200
+      shadow-[0_0_20px_rgba(250,204,21,0.8),0_0_40px_rgba(250,204,21,0.5)]"
+    >
+      👑 TOP 1
+    </div>
+  </div>
+
   <div className="flex-shrink-0 flex flex-col items-center w-40">
     <Image
       src="/slotuna.png"
