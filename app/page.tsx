@@ -310,9 +310,7 @@ export default function Home() {
 {/* Baner – Kodabet */}
 <div className="w-full bg-gradient-to-br from-[#0A1F44] via-[#1E4ED8] to-[#050E24] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#1E4ED8]/60 relative">
 
-  <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#ef4444] to-[#b91c1c] text-white text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
-    NEW
-  </div>
+
 
   <div className="flex-shrink-0 flex flex-col items-center w-40">
     <Image
