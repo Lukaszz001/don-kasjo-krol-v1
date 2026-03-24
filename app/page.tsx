@@ -112,7 +112,7 @@ export default function Home() {
   </div>
 </div>
 
-  {/* Baner – Slotuna */}
+ {/* Baner – Slotuna */}
 <div className="w-full bg-gradient-to-br from-[#0A1F44] via-[#1E4ED8] to-[#050E24] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#1E4ED8]/60 relative">
 
   <div className="flex-shrink-0 flex flex-col items-center w-40">
@@ -135,7 +135,7 @@ export default function Home() {
       <span className="font-bold">Największe plusy:</span> Z kodem KASJO bonus powitalny 100% do 2250 PLN, 200 darmowych spinów i 1 Bonus Crab.
     </div>
 
-    <div className="text-sm text-white font-bold mt-2">
+    <div className="text-sm text-white font-bold mt-2 text-center">
       Wypłacone w lutym: 166 095 PLN
     </div>
   </div>
