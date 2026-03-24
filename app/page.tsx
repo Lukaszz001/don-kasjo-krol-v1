@@ -134,6 +134,10 @@ export default function Home() {
     <div className="text-sm text-gray-100 mb-2">
       <span className="font-bold">Największe plusy:</span> Z kodem KASJO bonus powitalny 100% do 2250 PLN, 200 darmowych spinów i 1 Bonus Crab.
     </div>
+
+    <div className="text-sm text-white font-bold mt-2">
+      Wypłacone w lutym: 166 095 PLN
+    </div>
   </div>
 
   <div className="flex flex-col gap-2 w-40 relative">
