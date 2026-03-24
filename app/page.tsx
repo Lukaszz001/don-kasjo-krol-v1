@@ -137,21 +137,6 @@ export default function Home() {
   </div>
 
   <div className="flex flex-col gap-2 w-40 relative">
-    <span className="text-xs text-gray-300 mb-1 text-center">
-      Kliknij, aby skopiować.
-    </span>
-
-    <button
-      className="bg-gradient-to-r from-[#0A1F44] via-[#1E4ED8] to-[#050E24] cursor-pointer hover:from-[#050E24] hover:to-[#0A1F44] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#1E4ED8cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
-      type="button"
-      onClick={() => {
-        handleCopy();
-        (window as any).gtag?.("event", "copy_code", { code: "KASJO", banner: "Slotuna" });
-      }}
-    >
-      {copied ? "Skopiowano" : "KOD: KASJO"}
-    </button>
-
     <a
       href="https://sltna.pclira.com/?mid=349639_2019132"
       target="_blank"
