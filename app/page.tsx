@@ -74,13 +74,12 @@ export default function Home() {
   {/* Treść */}
   <div className="flex-1 flex flex-col gap-2">
     <div className="bg-[#041A14]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_6px_rgba(34,255,136,0.4)]">
-      100% BONUS POWITALNY + 100FS
+      NA START 250% DO 4000 PLN + 350FS
     </div>
 
     <div className="text-sm text-gray-100 mb-2">
       <span className="font-bold">Największe plusy:</span> 
-      Bonus powitalny 100% do 1500 PLN, 200 darmowych spinów. 
-      Pakiet powitalny aż do 4000 PLN!
+      Pakiet powitalny aż 250% do 4000 PLN i 350 darmowych spinów!
     </div>
   </div>
 
