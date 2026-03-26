@@ -87,7 +87,7 @@ export default function Home() {
   {/* CTA */}
   <div className="flex flex-col gap-2 w-40 relative">
     <a
-      href="https://affitrck2.com/C.ashx?btag=a_386b_11c_&affid=183&siteid=386&adid=11&c="
+      href="https://www.luckyfruits1.com/pl/register/step1/?CXD=a_386b_11c_&affid=183&siteid=386"
       target="_blank"
       rel="noopener noreferrer"
     >
