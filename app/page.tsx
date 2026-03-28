@@ -103,7 +103,7 @@ export default function Home() {
     </button>
 
     <a
-      href="https://stake.com/?offer=kasjowin&c=KasjoWin"
+      href="https://stake.jp/?offer=kasjowin&c=KasjoWin"
       target="_blank"
       rel="noopener noreferrer"
       className="w-full"
