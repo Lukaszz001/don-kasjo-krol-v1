@@ -124,7 +124,73 @@ export default function Home() {
   </div>
 </div>
   
+{/* Baner – WPT Global */}
+<div className="w-full bg-gradient-to-br from-white via-gray-100 to-gray-200 rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-gray-300/60 relative">
 
+  {/* Subtelny glow */}
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(0,0,0,0.06),transparent_45%)] pointer-events-none" />
+
+  {/* Logo */}
+  <div className="flex-shrink-0 flex flex-col items-center w-40">
+    <Image
+      src="/wptglobal.png"
+      alt="WPT Global Logo"
+      width={200}
+      height={200}
+      className="mb-2"
+    />
+  </div>
+
+  {/* Treść */}
+  <div className="flex-1 flex flex-col gap-2">
+    <div className="bg-white/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-black shadow-sm">
+      Wygraj wyjazd na Battle of Malta!
+    </div>
+
+    <div className="text-sm text-gray-800 mb-2">
+      <span className="font-bold">Największe plusy:</span> 
+      Codzienne satelity o wyjazd na Battle of Malta! Start już od $1.10, a co tydzień także w darmowych freerollach!
+    </div>
+  </div>
+
+  {/* CTA */}
+  <div className="flex flex-col gap-2 w-40 relative z-10">
+    <span className="text-xs text-gray-500 mb-1 text-center">
+      Kliknij, aby skopiować.
+    </span>
+
+    <button
+      className="bg-gradient-to-r from-gray-800 to-black text-white rounded-full px-4 py-2 font-bold text-sm shadow-md border border-gray-400 transition-all duration-300 hover:scale-105 hover:from-black hover:to-gray-800"
+      type="button"
+      onClick={() => {
+        handleCopySpinbara();
+        (window as any).gtag?.('event', 'copy_code', { code: 'KASJO', banner: 'WPT Global' });
+      }}
+    >
+      {copiedSpinbara ? "Skopiowano" : "KOD: KASJO"}
+    </button>
+
+    <a
+      href="https://tracking.wptpartners.com/visit/?bta=36435&nci=13695"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="w-full"
+    >
+      <button
+        type="button"
+        className="bg-gradient-to-r from-gray-800 to-black text-white rounded-full px-4 py-2 font-bold text-sm shadow-md border border-gray-400 transition-all duration-300 mt-2 w-full hover:scale-105 hover:from-black hover:to-gray-800"
+        onClick={() =>
+          (window as any).gtag?.('event', 'external_click', {
+            link_url: 'https://tracking.wptpartners.com/visit/?bta=36435&nci=13695',
+            banner: 'WPT Global',
+          })
+        }
+      >
+        Odbierz bonusy →
+      </button>
+    </a>
+  </div>
+</div>
 
  {/* Baner – Slotuna */}
 <div className="w-full bg-gradient-to-br from-[#0A1F44] via-[#1E4ED8] to-[#050E24] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#1E4ED8]/60 relative">
