@@ -113,7 +113,7 @@ export default function Home() {
         className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-300 text-black rounded-full px-4 py-2 font-bold text-sm shadow-lg border border-yellow-200 transition-all duration-300 mt-2 w-full hover:scale-105"
         onClick={() =>
           (window as any).gtag?.('event', 'external_click', {
-            link_url: 'https://stake.com/?offer=kasjowin&c=KasjoWin',
+            link_url: 'https://stake.jp/?offer=kasjowin&c=KasjoWin',
             banner: 'Stake',
           })
         }
