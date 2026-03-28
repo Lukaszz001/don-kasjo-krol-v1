@@ -51,15 +51,70 @@ export default function Home() {
 <div className="w-full flex flex-col gap-8">
 
   
- {/* Baner – LuckyFruits */}
-<div className="w-full bg-gradient-to-br from-[#0B3D2E] via-[#0F5132] to-[#07251D] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#22FF88]/20 relative">
+{/* Baner – Stake (TERAZ TOP1) */}
+<div className="w-full bg-gradient-to-br from-[#7F1D1D] via-[#B91C1C] to-[#450A0A] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-red-700/60 relative overflow-hidden">
 
-  {/* Naklejka TOP1 */}
-  <div className="absolute -top-3 -left-3 rotate-[-15deg] bg-gradient-to-r from-[#22FF88] to-[#16a34a] text-black text-sm font-bold px-6 py-2 rounded-md shadow-lg animate-pulse">
-    TOP1
+  {/* Naklejka TOP1 (bardziej premium) */}
+  <div className="absolute -top-3 -left-3 rotate-[-12deg] bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 text-black text-sm font-extrabold px-6 py-2 rounded-md shadow-2xl animate-pulse border border-yellow-200">
+    🏆 TOP1
   </div>
 
-  {/* Logo */}
+  {/* Glow effect */}
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,215,0,0.25),transparent_40%)] pointer-events-none" />
+
+  <div className="flex-shrink-0 flex flex-col items-center w-40">
+    <Image src="/stake.png" alt="Stake Logo" width={200} height={200} className="mb-2" />
+  </div>
+
+  <div className="flex-1 flex flex-col gap-2">
+    <div className="bg-[#2A0A0A]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_6px_rgba(255,215,0,0.6)]">
+      3,5% DOŻYWOTNIEGO ZWROTU!
+    </div>
+
+    <div className="text-sm text-gray-100 mb-2">
+      <span className="font-bold">Największe plusy:</span> Z kodem KASJOWIN 3.5% dożywotniego rakebacku, codzienne turnieje z wysokimi nagrodami.
+    </div>
+  </div>
+
+  <div className="flex flex-col gap-2 w-40 relative">
+    <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
+
+    <button
+      className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-300 text-black rounded-full px-4 py-2 font-bold text-sm shadow-lg border border-yellow-200 transition-all duration-300 hover:scale-105"
+      type="button"
+      onClick={() => {
+        handleCopySpinbara();
+        (window as any).gtag?.('event', 'copy_code', { code: 'KASJOWIN', banner: 'Stake' });
+      }}
+    >
+      {copiedSpinbara ? "Skopiowano" : "KOD: KASJOWIN"}
+    </button>
+
+    <a
+      href="https://stake.com/?offer=kasjowin&c=KasjoWin"
+      className="group"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <button
+        type="button"
+        className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-300 text-black rounded-full px-4 py-2 font-bold text-sm shadow-lg border border-yellow-200 transition-all duration-300 mt-2 w-full hover:scale-105"
+        onClick={() =>
+          (window as any).gtag?.('event', 'external_click', {
+            link_url: 'https://stake.com/?offer=kasjowin&c=KasjoWin',
+            banner: 'Stake',
+          })
+        }
+      >
+        Odbierz bonusy →
+      </button>
+    </a>
+  </div>
+</div>
+
+{/* Baner – LuckyFruits (bez TOP1) */}
+<div className="w-full bg-gradient-to-br from-[#0B3D2E] via-[#0F5132] to-[#07251D] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#22FF88]/20 relative">
+
   <div className="flex-shrink-0 flex flex-col items-center w-40">
     <Image
       src="/fruits.png"
@@ -71,7 +126,6 @@ export default function Home() {
     />
   </div>
 
-  {/* Treść */}
   <div className="flex-1 flex flex-col gap-2">
     <div className="bg-[#041A14]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_6px_rgba(34,255,136,0.4)]">
       NA START 250% DO 4000 PLN + 350FS
@@ -83,7 +137,6 @@ export default function Home() {
     </div>
   </div>
 
-  {/* CTA */}
   <div className="flex flex-col gap-2 w-40 relative">
     <a
       href="https://www.luckyfruits1.com/pl/register/step1/?CXD=a_386b_11c_&affid=183&siteid=386"
@@ -104,105 +157,8 @@ export default function Home() {
     </a>
   </div>
 </div>
-
-  {/* Baner – Stake */}
-<div className="w-full bg-gradient-to-br from-[#7F1D1D] via-[#B91C1C] to-[#450A0A] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-red-700/60 relative">
-  <div className="flex-shrink-0 flex flex-col items-center w-40">
-    <Image src="/stake.png" alt="Stake Logo" width={200} height={200} className="mb-2" />
-  </div>
-
-  <div className="flex-1 flex flex-col gap-2">
-    <div className="bg-[#2A0A0A]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#B91C1Ccc]">
-      3,5% DOŻYWOTNIEGO ZWROTU!
-    </div>
-
-    <div className="text-sm text-gray-100 mb-2">
-      <span className="font-bold">Największe plusy:</span> Z kodem KASJOWIN 3.5% dożywotniego rakebacku, codzienne turnieje z wysokimi nagrodami.
-    </div>
-  </div>
-
-  <div className="flex flex-col gap-2 w-40 relative">
-    <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
-
-    <button
-      className="bg-gradient-to-r from-[#7F1D1D] via-[#B91C1C] to-[#450A0A] cursor-pointer hover:from-[#450A0A] hover:to-[#7F1D1D] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#B91C1Ccc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
-      type="button"
-      onClick={() => {
-        handleCopySpinbara();
-        (window as any).gtag?.('event', 'copy_code', { code: 'KASJOWIN', banner: 'Stake' });
-      }}
-    >
-      {copiedSpinbara ? "Skopiowano" : "KOD: KASJOWIN"}
-    </button>
-
-    <a
-      href="https://stake.com/?offer=kasjowin&c=KasjoWin"
-      className="group"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <button
-        type="button"
-        className="bg-gradient-to-r from-[#7F1D1D] via-[#B91C1C] to-[#450A0A] cursor-pointer hover:from-[#450A0A] hover:to-[#7F1D1D] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#B91C1Ccc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full"
-        onClick={() =>
-          (window as any).gtag?.('event', 'external_click', {
-            link_url: 'https://stake.com/?offer=kasjowin&c=KasjoWin',
-            banner: 'Stake',
-          })
-        }
-      >
-        Odbierz bonusy →
-      </button>
-    </a>
-  </div>
-</div>
   
-{/* Baner – Kodabet */}
-<div className="w-full bg-gradient-to-br from-[#facc15] via-[#eab308] to-[#a16207] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#facc15]/60 relative">
 
-
-
-  <div className="flex-shrink-0 flex flex-col items-center w-40">
-    <Image
-      src="/kodabet.png"
-      alt="Kodabet Logo"
-      width={200}
-      height={200}
-      className="mb-2"
-    />
-  </div>
-
-  <div className="flex-1 flex flex-col gap-2">
-    <div className="bg-[#18181b]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#eab308cc]">
-      100% BONUS POWITALNY + 100FS
-    </div>
-
-    <div className="text-sm text-gray-100 mb-2">
-      <span className="font-bold">Największe plusy:</span> Bonus powitalny 100% do 1000 PLN, 100 darmowych spinów. Możliwość płatności BLIK i szybka realizacja wypłat!
-    </div>
-  </div>
-
-  <div className="flex flex-col gap-2 w-40 relative">
-    <a
-      href="https://afftrk.karhubet.com/C.ashx?btag=a_20726b_972c_&affid=5048&siteid=20726&adid=972&c="
-      className="group"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <button
-        className="bg-gradient-to-r from-[#facc15] via-[#eab308] to-[#a16207] cursor-pointer hover:from-[#a16207] hover:to-[#facc15] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#eab308cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 w-full"
-        onClick={() =>
-          (window as any).gtag?.("event", "external_click", {
-            link_url: "https://afftrk.karhubet.com/C.ashx?btag=a_20726b_972c_&affid=5048&siteid=20726&adid=972&c=",
-            banner: "Kodabet",
-          })
-        }
-      >
-        Odbierz bonusy →
-      </button>
-    </a>
-  </div>
-</div>
 
  {/* Baner – Slotuna */}
 <div className="w-full bg-gradient-to-br from-[#0A1F44] via-[#1E4ED8] to-[#050E24] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#1E4ED8]/60 relative">
@@ -351,53 +307,7 @@ export default function Home() {
   </div>
 </div>
   
-  {/* Baner – Dude */}
-<div className="w-full bg-gradient-to-br from-[#5B2C6F] via-[#7D3C98] to-[#4A235A] rounded-3xl p-8 flex flex-col md:flex-row items-center gap-6 shadow-xl border border-[#7D3C98]/60 relative">
-  <div className="flex-shrink-0 flex flex-col items-center w-40">
-    <Image src="/dude.png" alt="Dude Logo" width={200} height={200} className="mb-2" />
-  </div>
-  <div className="flex-1 flex flex-col gap-2">
-    <div className="bg-[#1E0F2E]/80 rounded-xl px-4 py-2 text-center text-lg font-bold mb-2 text-white drop-shadow-[0_1px_4px_#7D3C98cc]">
-      PAKIET POWITALNY 300% DO 9000 PLN + 150FS
-    </div>
-    <div className="text-sm text-gray-100 mb-2">
-      <span className="font-bold">Największe plusy:</span> Ogromny pakiet powitalny aż 300% do 9000 PLN, 150 darmowych spinów, 100% bonus na sport.
-    </div>
-  </div>
-  <div className="flex flex-col gap-2 w-40 relative">
-    <span className="text-xs text-gray-300 mb-1 text-center">Kliknij, aby skopiować.</span>
-    <button
-      className="bg-gradient-to-r from-[#5B2C6F] via-[#7D3C98] to-[#4A235A] cursor-pointer hover:from-[#4A235A] hover:to-[#5B2C6F] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#7D3C98cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300"
-      type="button"
-      onClick={() => {
-        handleCopySpinbara();
-        (window as any).gtag?.('event', 'copy_code', { code: 'DUDE', banner: 'Dude' });
-      }}
-    >
-      {copiedSpinbara ? "Skopiowano" : "KOD: DUDE"}
-    </button>
-
-    <a
-      href="https://ddspn.lynmonkel.com/?mid=353195_2038029"
-      className="group"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <button
-        type="button"
-        className="bg-gradient-to-r from-[#5B2C6F] via-[#7D3C98] to-[#4A235A] cursor-pointer hover:from-[#4A235A] hover:to-[#5B2C6F] text-white rounded-full px-4 py-2 font-bold text-sm drop-shadow-[0_1px_4px_#7D3C98cc] border border-white border-opacity-80 border-[1.5px] transition-all duration-300 mt-2 w-full"
-        onClick={() =>
-          (window as any).gtag?.('event', 'external_click', {
-            link_url: 'https://dudsp.lynmonkel.com/?mid=343304_1984676',
-            banner: 'Dude',
-          })
-        }
-      >
-        Odbierz bonusy →
-      </button>
-    </a>
-  </div>
-</div>
+ 
 
 
   {/* Baner – Punter */}
